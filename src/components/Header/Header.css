@@ -1,0 +1,29 @@
+.header {
+  margin: 0;
+  padding: 0 120px;
+  display: flex;
+  height: 110px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.header__logo {
+  width: 163px;
+  height: 30px;
+}
+
+.header__links {
+  display: flex;
+  gap: 20px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: black;
+}
+
+.header__link-text {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,29 @@
+.promo {
+  margin: 0;
+  padding: 0 120px;
+}
+
+.promo__title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  margin-bottom: 95px;
+}
+
+.promo__line {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.promo__bottom-сontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.promo__bottom-image {
+  position: absolute;
+  right: 250px;
+}
