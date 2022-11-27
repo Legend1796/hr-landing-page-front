@@ -4,7 +4,7 @@ function Promo() {
 
   return (
     <section className='promo'>
-      <h1 className='promo__title'> Делись своим опытом в</h1>
+      <h1 className='promo__title'>Делись своим опытом в</h1>
       <div className='promo__line'>
         <p className='promo__paragrapf promo__paragrapf_small'>дизайне</p>
         <p className='promo__paragrapf promo__paragrapf_blue-small'>анализе данных</p>
