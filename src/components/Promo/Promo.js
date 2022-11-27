@@ -23,7 +23,7 @@ function Promo() {
         <p className='promo__paragrapf'>дизайне</p>
       </div>
       <div className='promo__bottom-сontainer'>
-        <button className='promo__bottom'>Хочу делить знаниями</button>
+        <button className='promo__bottom'>Хочу делиться знаниями</button>
         <img className='promo__bottom-image' src={promoImage} alt='Логотип сайта'></img>
         <p className='promo__paragrapf promo__paragrapf_bottom'>Получай дополнительный доход</p>
       </div>
