@@ -4,11 +4,16 @@
   border-bottom: 1px solid #1A1B22;
 }
 
+.promo__in {}
+
 .promo__title {
   font-weight: 500;
   font-size: 80px;
   line-height: 80px;
-  margin-bottom: 95px;
+  margin: 0;
+  margin-top: 100px;
+  margin-right: 0;
+  /* width: 850px; */
 }
 
 .promo__line {

@@ -1,0 +1,29 @@
+.expert {
+  margin: 0;
+  padding: 0 120px;
+}
+
+.expert__title {
+  padding: 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  margin: 120px auto 64px auto;
+}
+
+.expert__cards {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.expert__card {
+  width: 320px;
+}
+
+.expert__card-paragraph {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: left;
+}
