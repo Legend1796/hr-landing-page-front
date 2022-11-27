@@ -3,6 +3,7 @@
   padding: 0 120px;
   border-bottom: 1px solid #1A1B22;
   position: relative;
+  overflow: hidden;
 }
 
 .promo__in {
@@ -14,7 +15,7 @@
 .promo__title {
   font-size: 80px;
   line-height: 80px;
-  margin: 100px auto;
+  margin: 211px auto;
   position: relative;
   text-align: right;
   font-weight: 500;
@@ -27,14 +28,6 @@
   display: flex;
   margin: 0;
   align-items: center;
-}
-
-.promo__line_right {
-  animation: 2s anim-lineUp ease-out infinite;
-}
-
-.promo__line_left {
-  animation: 2s anim-lineUp ease-out infinite;
 }
 
 .promo__bottom-сontainer {
@@ -122,19 +115,19 @@
 }
 
 .promo__line_first {
-  top: 120px;
+  top: 331px;
   left: -80px;
   animation: 3s slidein alternate ease-in-out infinite;
 }
 
 .promo__line_second {
-  top: 215px;
+  top: 426px;
   left: -162px;
   animation: 4s slidein alternate ease-in-out infinite;
 }
 
 .promo__line_third {
-  top: 295px;
+  top: 506px;
   left: -62px;
   animation: 4s slidein alternate ease-in-out infinite;
 }

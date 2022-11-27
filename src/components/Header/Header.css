@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
 }
 
 .header__logo {
