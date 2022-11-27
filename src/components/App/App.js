@@ -1,6 +1,7 @@
 import Expert from '../Expert/Expert';
 import Header from '../Header/Header';
 import Promo from '../Promo/Promo';
+import Profi from '../Profi/Profi';
 import './App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <Promo />
       <Expert />
-
+      <Profi />
 
 
     </div>
