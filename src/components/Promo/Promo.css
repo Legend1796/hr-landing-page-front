@@ -129,7 +129,7 @@
 .promo__line_third {
   top: 506px;
   left: -62px;
-  animation: 4s slidein alternate ease-in-out infinite;
+  animation: 5s slidein alternate ease-in-out infinite;
 }
 
 @keyframes slidein {
