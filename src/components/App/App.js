@@ -4,17 +4,27 @@ import Promo from '../Promo/Promo';
 import Profi from '../Profi/Profi';
 import Quiz from '../Quiz/Quiz';
 import './App.css';
+import VacancyMentor from '../Vacancy/VacancyMentor';
+import { Route, Redirect } from 'react-router-dom';
+import VacancyReview from '../Vacancy/VacancyReview';
 
 function App() {
   return (
     <div className="App">
+      <Route exact path='/'>
+        <Redirect to='/mentor/programming' />
+      </Route>
       <Header />
       <Promo />
       <Expert />
       <Quiz />
       <Profi />
-
-
+      <Route path='/mentor'>
+        <VacancyMentor />
+      </Route>
+      <Route path='/review'>
+        <VacancyReview />
+      </Route>
     </div>
   );
 }
