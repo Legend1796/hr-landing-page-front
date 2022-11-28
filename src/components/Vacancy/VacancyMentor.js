@@ -41,7 +41,7 @@ function VacancyMentor({ countCards }) {
 
   return (
     <>
-      <section className='vacancy'>
+      <section className='vacancy' id='vacancy'>
         <h1 className='vacancy__title'>Кого мы ищем</h1>
         <div className='vacancy__links'>
           <Link className='vacancy__link vacancy__link-active' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>

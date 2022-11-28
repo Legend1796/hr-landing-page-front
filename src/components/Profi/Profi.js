@@ -9,7 +9,7 @@ import profiLink from '../../images/profi-link.svg'
 import './Profi.css'
 function Profi() {
   return (
-    <section className='profi'>
+    <section className='profi' id='profi'>
       <p className='profi__title'>Направления</p>
       <div className='profi__container'>
         <div className='profi__card'>

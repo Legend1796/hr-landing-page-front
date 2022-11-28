@@ -6,7 +6,7 @@ import expertImage from '../../images/expert.svg';
 function Expert() {
 
   return (
-    <section className='expert'>
+    <section className='expert' id='expert'>
       <h2 className='expert__title'>Как стать экспертом</h2>
       <ul className='expert__cards'>
         <li className='expert__card expert__card_first'>
