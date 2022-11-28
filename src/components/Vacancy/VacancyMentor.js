@@ -3,7 +3,7 @@ import { Link, Route } from 'react-router-dom';
 import { vacancies } from '../utils/vacancies';
 import Vacancy from './Vacancy';
 
-function VacancyMentor() {
+function VacancyMentor({ countCards }) {
 
   const [cards, setCards] = React.useState(vacancies);
   const [specs, setSpecs] = React.useState('programming');
@@ -33,8 +33,10 @@ function VacancyMentor() {
     setSpecs('menegement');
   }
 
+
+
   function filterCards(specs, cards) {
-    setResultCards(cards.filter((i) => i.role === 'mentor').filter((i) => i.specs === specs));
+    setResultCards((cards.filter((i) => i.role === 'mentor').filter((i) => i.specs === specs)).slice(0, countCards));
   }
 
   return (

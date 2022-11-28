@@ -3,7 +3,7 @@ import { Link, Route } from 'react-router-dom';
 import { vacancies } from '../utils/vacancies';
 import Vacancy from './Vacancy';
 
-function VacancyReview() {
+function VacancyReview({ countCards }) {
 
   const [cards, setCards] = React.useState(vacancies);
   const [specs, setSpecs] = React.useState('programming');
@@ -39,7 +39,7 @@ function VacancyReview() {
   }
 
   function filterCards(specs, cards) {
-    setResultCards(cards.filter((i) => i.role === 'review').filter((i) => i.specs === specs));
+    setResultCards((cards.filter((i) => i.role === 'review').filter((i) => i.specs === specs)).slice(0, countCards));
   }
 
   return (

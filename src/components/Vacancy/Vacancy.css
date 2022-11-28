@@ -1,5 +1,6 @@
 .vacancy {
-  padding: 120px;
+  padding: 0 120px;
+  padding-top: 120px;
 }
 
 .vacancy__list {
