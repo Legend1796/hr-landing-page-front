@@ -47,7 +47,7 @@ function VacancyReview() {
       <section className='vacancy'>
         <h1 className='vacancy__title'>Кого мы ищем</h1>
         <div className='vacancy__links'>
-          <Link className='vacancy__link' to='/review/programming'><p className='vacancy__link-text'>Наставников</p></Link>
+          <Link className='vacancy__link' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>
           <Link className='vacancy__link vacancy__link-active' to='/review/programming'><p className='vacancy__link-text'>Ревьюеров</p></Link>
         </div>
         <div className='vacancy__table'>

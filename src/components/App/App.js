@@ -7,6 +7,7 @@ import './App.css';
 import VacancyMentor from '../Vacancy/VacancyMentor';
 import { Route, Redirect } from 'react-router-dom';
 import VacancyReview from '../Vacancy/VacancyReview';
+import Banner from '../Banner/Banner';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Expert />
       <Quiz />
       <Profi />
+      <Banner />
       <Route path='/mentor'>
         <VacancyMentor />
       </Route>

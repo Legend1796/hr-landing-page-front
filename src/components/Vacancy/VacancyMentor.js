@@ -189,11 +189,16 @@ function VacancyMentor() {
           <p className='vacancy__not-found'>Таких вакансий пока нет 😊
             Чтобы посмотреть другие, поменяйте роль или направление.</p>
           :
-          <ul className='vacancy__items'>
-            {resultCards.map((vacancy) => (
-              <Vacancy title={vacancy.title} textPay={vacancy.textPay} textCash={vacancy.textCash} url={vacancy.url} key={vacancy.id} />
-            ))}
-          </ul>
+          <>
+            <ul className='vacancy__items'>
+              {resultCards.map((vacancy) => (
+                <Vacancy title={vacancy.title} textPay={vacancy.textPay} textCash={vacancy.textCash} url={vacancy.url} key={vacancy.id} />
+              ))}
+            </ul>
+            <div>
+
+            </div>
+          </>
         }
       </section>
     </>
