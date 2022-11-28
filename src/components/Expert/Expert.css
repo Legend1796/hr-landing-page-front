@@ -6,24 +6,49 @@
 .expert__title {
   padding: 0;
   font-weight: 500;
+  font-style: normal;
   font-size: 40px;
   line-height: 44px;
   margin: 120px auto 64px auto;
+  text-align: left;
 }
 
 .expert__cards {
   display: flex;
-  list-style: none;
-  justify-content: space-between;
+  position: relative;
 }
 
 .expert__card {
-  width: 320px;
+  position: absolute;
+  display: flex;
+  align-items: center;
 }
 
+.expert__card_first {
+  top: 15px;
+  left: 89px;
+}
+
+.expert__card_second {
+  top: 189px;
+  left: 473px;
+}
+
+.expert__card_third {
+  top: -25px;
+  right: -4px;
+}
+
+
 .expert__card-paragraph {
+  width: 275px;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 28px;
   text-align: left;
+  margin-left: 30px;
+}
+
+.expert__bottom-image {
+  margin: 367px auto 120px;
 }
