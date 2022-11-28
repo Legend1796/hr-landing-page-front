@@ -6,21 +6,40 @@ import Vacancy from './Vacancy';
 function VacancyMentor() {
 
   const [cards, setCards] = React.useState(vacancies);
-  const [role, setRole] = React.useState('mentor');
   const [specs, setSpecs] = React.useState('programming');
   const [resultCards, setResultCards] = React.useState([]);
 
+  // React.useEffect(() => {
+  //   filterCards(specs, cards);
+  // }, [])
+
   React.useEffect(() => {
-    filterCards(role, specs, cards);
-  }, [])
+    filterCards(specs, cards);
+  }, [specs])
 
-
-  function filterCards(role, specs, cards) {
-    setResultCards(cards.filter((i) => i.role === role).filter((i) => i.specs === specs));
+  function setProgramming() {
+    setSpecs('programming');
   }
 
-  // console.log(cards);
+  function setAnalitics() {
+    setSpecs('analitics');
+  }
 
+  function setDesigh() {
+    setSpecs('design');
+  }
+
+  function setMarketing() {
+    setSpecs('marketing');
+  }
+
+  function setMenegement() {
+    setSpecs('menegement');
+  }
+
+  function filterCards(specs, cards) {
+    setResultCards(cards.filter((i) => i.role === 'mentor').filter((i) => i.specs === specs));
+  }
 
   return (
     <>
@@ -32,39 +51,139 @@ function VacancyMentor() {
         </div>
         <div className='vacancy__table'>
           <Route path='/mentor/programming'>
-            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/programming'><p className='vacancy__choise-text'>Программирование</p></Link>
-            <Link className='vacancy__choise' to='/mentor/analitics'><p className='vacancy__choise-text'>Аналитика</p></Link>
-            <Link className='vacancy__choise' to='/mentor/design'><p className='vacancy__choise-text'>Дизайн</p></Link>
-            <Link className='vacancy__choise' to='/mentor/marketing'><p className='vacancy__choise-text'>Маркетинг</p></Link>
-            <Link className='vacancy__choise' to='/mentor/menegement'><p className='vacancy__choise-text'>Менеджмент</p></Link>
+            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/programming'>
+              <button type='button' onClick={setProgramming} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Программирование</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/analitics'>
+              <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Аналитика</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/design'>
+              <button type='button' onClick={setDesigh} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Дизайн</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/marketing'>
+              <button type='button' onClick={setMarketing} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Маркетинг</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/menegement'>
+              <button type='button' onClick={setMenegement} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Менеджмент</p>
+              </button>
+            </Link>
           </Route>
           <Route path='/mentor/analitics'>
-            <Link className='vacancy__choise' to='/mentor/programming'><p className='vacancy__choise-text'>Программирование</p></Link>
-            <Link className='vacancy__choise  vacancy__choise-active' to='/mentor/analitics'><p className='vacancy__choise-text'>Аналитика</p></Link>
-            <Link className='vacancy__choise' to='/mentor/design'><p className='vacancy__choise-text'>Дизайн</p></Link>
-            <Link className='vacancy__choise' to='/mentor/marketing'><p className='vacancy__choise-text'>Маркетинг</p></Link>
-            <Link className='vacancy__choise' to='/mentor/menegement'><p className='vacancy__choise-text'>Менеджмент</p></Link>
+            <Link className='vacancy__choise' to='/mentor/programming'>
+              <button type='button' onClick={setProgramming} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Программирование</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise  vacancy__choise-active' to='/mentor/analitics'>
+              <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Аналитика</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/design'>
+              <button type='button' onClick={setDesigh} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Дизайн</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/marketing'>
+              <button type='button' onClick={setMarketing} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Маркетинг</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/menegement'>
+              <button type='button' onClick={setMenegement} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Менеджмент</p>
+              </button>
+            </Link>
           </Route>
           <Route path='/mentor/design'>
-            <Link className='vacancy__choise' to='/mentor/programming'><p className='vacancy__choise-text'>Программирование</p></Link>
-            <Link className='vacancy__choise' to='/mentor/analitics'><p className='vacancy__choise-text'>Аналитика</p></Link>
-            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/design'><p className='vacancy__choise-text'>Дизайн</p></Link>
-            <Link className='vacancy__choise' to='/mentor/marketing'><p className='vacancy__choise-text'>Маркетинг</p></Link>
-            <Link className='vacancy__choise' to='/mentor/menegement'><p className='vacancy__choise-text'>Менеджмент</p></Link>
+            <Link className='vacancy__choise' to='/mentor/programming'>
+              <button type='button' onClick={setProgramming} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Программирование</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/analitics'>
+              <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Аналитика</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/design'>
+              <button type='button' onClick={setDesigh} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Дизайн</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/marketing'>
+              <button type='button' onClick={setMarketing} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Маркетинг</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/menegement'>
+              <button type='button' onClick={setMenegement} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Менеджмент</p>
+              </button>
+            </Link>
           </Route>
           <Route path='/mentor/marketing'>
-            <Link className='vacancy__choise' to='/mentor/programming'><p className='vacancy__choise-text'>Программирование</p></Link>
-            <Link className='vacancy__choise' to='/mentor/analitics'><p className='vacancy__choise-text'>Аналитика</p></Link>
-            <Link className='vacancy__choise' to='/mentor/design'><p className='vacancy__choise-text'>Дизайн</p></Link>
-            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/marketing'><p className='vacancy__choise-text'>Маркетинг</p></Link>
-            <Link className='vacancy__choise' to='/mentor/menegement'><p className='vacancy__choise-text'>Менеджмент</p></Link>
+            <Link className='vacancy__choise' to='/mentor/programming'>
+              <button type='button' onClick={setProgramming} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Программирование</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/analitics'>
+              <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Аналитика</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/design'>
+              <button type='button' onClick={setDesigh} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Дизайн</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/marketing'>
+              <button type='button' onClick={setMarketing} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Маркетинг</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/menegement'>
+              <button type='button' onClick={setMenegement} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Менеджмент</p>
+              </button>
+            </Link>
           </Route>
           <Route path='/mentor/menegement'>
-            <Link className='vacancy__choise' to='/mentor/programming'><p className='vacancy__choise-text'>Программирование</p></Link>
-            <Link className='vacancy__choise' to='/mentor/analitics'><p className='vacancy__choise-text'>Аналитика</p></Link>
-            <Link className='vacancy__choise' to='/mentor/design'><p className='vacancy__choise-text'>Дизайн</p></Link>
-            <Link className='vacancy__choise' to='/mentor/marketing'><p className='vacancy__choise-text'>Маркетинг</p></Link>
-            <Link className='vacancy__choise vacancy__choise-active' to='/menegement'><p className='vacancy__choise-text'>Менеджмент</p></Link>
+            <Link className='vacancy__choise' to='/mentor/programming'>
+              <button type='button' onClick={setProgramming} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Программирование</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/analitics'>
+              <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Аналитика</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/design'>
+              <button type='button' onClick={setDesigh} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Дизайн</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise' to='/mentor/marketing'>
+              <button type='button' onClick={setMarketing} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Маркетинг</p>
+              </button>
+            </Link>
+            <Link className='vacancy__choise vacancy__choise-active' to='/menegement'>
+              <button type='button' onClick={setMenegement} className='vacancy__button'>
+                <p className='vacancy__choise-text'>Менеджмент</p>
+              </button>
+            </Link>
           </Route>
         </div>
       </section>
@@ -74,7 +193,7 @@ function VacancyMentor() {
           <p className='vacancy__not-found'>Таких вакансий пока нет 😊
             Чтобы посмотреть другие, поменяйте роль или направление.</p>
           :
-          <ul className='vacancy__item'>
+          <ul className='vacancy__items'>
             {resultCards.map((vacancy) => (
               <Vacancy title={vacancy.title} text={vacancy.text} url={vacancy.url} key={vacancy.id} />
             ))}

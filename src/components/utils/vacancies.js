@@ -113,7 +113,7 @@ export const vacancies = [
     url: 'https://practicum.yandex.ru/job/vacancy-6',
   },
   {
-    id: '14',
+    id: '15',
     role: 'mentor',
     specs: 'analitics',
     title: 'Наставник на курс «Системный аналитик»',
@@ -121,7 +121,7 @@ export const vacancies = [
     url: 'https://practicum.yandex.ru/job/vacancy-90',
   },
   {
-    id: '15',
+    id: '16',
     role: 'mentor',
     specs: 'analitics',
     title: 'Наставник на курс «Инженер данных»',
