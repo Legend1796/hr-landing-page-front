@@ -9,10 +9,6 @@ function VacancyMentor() {
   const [specs, setSpecs] = React.useState('programming');
   const [resultCards, setResultCards] = React.useState([]);
 
-  // React.useEffect(() => {
-  //   filterCards(specs, cards);
-  // }, [])
-
   React.useEffect(() => {
     filterCards(specs, cards);
   }, [specs])
@@ -179,7 +175,7 @@ function VacancyMentor() {
                 <p className='vacancy__choise-text'>Маркетинг</p>
               </button>
             </Link>
-            <Link className='vacancy__choise vacancy__choise-active' to='/menegement'>
+            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/menegement'>
               <button type='button' onClick={setMenegement} className='vacancy__button'>
                 <p className='vacancy__choise-text'>Менеджмент</p>
               </button>
@@ -195,7 +191,7 @@ function VacancyMentor() {
           :
           <ul className='vacancy__items'>
             {resultCards.map((vacancy) => (
-              <Vacancy title={vacancy.title} text={vacancy.text} url={vacancy.url} key={vacancy.id} />
+              <Vacancy title={vacancy.title} textPay={vacancy.textPay} textCash={vacancy.textCash} url={vacancy.url} key={vacancy.id} />
             ))}
           </ul>
         }
