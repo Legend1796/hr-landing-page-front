@@ -11,6 +11,7 @@ import VacancyReview from '../Vacancy/VacancyReview';
 import Banner from '../Banner/Banner';
 import FeedBack from '../FeedBack/FeedBack';
 import Popup from '../Popup/Popup';
+import * as popupTexts from '../utils/texts';
 
 function App() {
 
@@ -18,8 +19,27 @@ function App() {
   const [countCards, setCountCards] = React.useState(9);
   const [cardTitle, setCardTitle] = React.useState('');
   const [openPopup, setOpenPopup] = React.useState(false);
+  const [btnId, setBtnId] = React.useState(1);
+  const [texts, setTexts] = React.useState(popupTexts.texts1);
 
   window.onresize = newPageSize;
+
+  function handleActivateButton(num) {
+    setBtnId(num);
+    if (num === 1) {
+      setTexts(popupTexts.texts1);
+    } else if (num === 2) {
+      setTexts(popupTexts.texts2);
+    } else if (num === 3) {
+      setTexts(popupTexts.texts3);
+    } else if (num === 4) {
+      setTexts(popupTexts.texts4);
+    } else if (num === 5) {
+      setTexts(popupTexts.texts5);
+    } else {
+      setTexts(popupTexts.texts6);
+    }
+  }
 
   function handleClickOnVacancie(title) {
     setCardTitle(title);
@@ -68,7 +88,7 @@ function App() {
         <VacancyReview countCards={countCards} clickOnVacancie={handleClickOnVacancie} />
       </Route>
       <FeedBack />
-      <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} />
+      <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
     </div>
   );
 }
