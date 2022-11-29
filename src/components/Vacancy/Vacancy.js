@@ -1,11 +1,15 @@
-function Vacancy({ title, textPay, textCash, url }) {
+function Vacancy({ title, textPay, textCash, clickOnVacancie }) {
+
+  function buttonClick() {
+    clickOnVacancie(title);
+  }
 
   return (
-    <a className='vacancy__item' href={url} target='_blank' rel='noopener noreferrer'>
+    <button className='vacancy__item' type='button' onClick={buttonClick}>
       <h3 className='vacancy__item-title'>{title}</h3>
       <p className='vacancy__item-text'>{textPay}</p>
       <p className='vacancy__item-text'>{textCash}</p>
-    </a>
+    </button>
   );
 }
 

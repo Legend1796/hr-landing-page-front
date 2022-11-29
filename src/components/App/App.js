@@ -16,8 +16,19 @@ function App() {
 
   const [pageWidth, setPagewidth] = React.useState(document.documentElement.scrollWidth);
   const [countCards, setCountCards] = React.useState(9);
+  const [cardTitle, setCardTitle] = React.useState('');
+  const [openPopup, setOpenPopup] = React.useState(false);
 
   window.onresize = newPageSize;
+
+  function handleClickOnVacancie(title) {
+    setCardTitle(title);
+    setOpenPopup(true);
+  }
+
+  function handleCloseAllPopups() {
+    setOpenPopup(false);
+  }
 
   function countCardsOnPage() {
 
@@ -51,13 +62,13 @@ function App() {
       <Profi />
       <Banner />
       <Route path='/mentor'>
-        <VacancyMentor countCards={countCards} />
+        <VacancyMentor countCards={countCards} clickOnVacancie={handleClickOnVacancie} />
       </Route>
       <Route path='/review'>
-        <VacancyReview countCards={countCards} />
+        <VacancyReview countCards={countCards} clickOnVacancie={handleClickOnVacancie} />
       </Route>
       <FeedBack />
-      <Popup />
+      <Popup isOpen={true} title={cardTitle} onClose={handleCloseAllPopups} />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Link, Route } from 'react-router-dom';
 import { vacancies } from '../utils/vacancies';
 import Vacancy from './Vacancy';
 
-function VacancyReview({ countCards }) {
+function VacancyReview({ countCards, clickOnVacancie }) {
 
   const [cards, setCards] = React.useState(vacancies);
   const [specs, setSpecs] = React.useState('programming');
@@ -198,7 +198,7 @@ function VacancyReview({ countCards }) {
           :
           <ul className='vacancy__items'>
             {resultCards.map((vacancy) => (
-              <Vacancy title={vacancy.title} textPay={vacancy.textPay} textCash={vacancy.textCash} url={vacancy.url} key={vacancy.id} />
+              <Vacancy title={vacancy.title} textPay={vacancy.textPay} textCash={vacancy.textCash} url={vacancy.url} key={vacancy.id} clickOnVacancie={clickOnVacancie} />
             ))}
           </ul>
         }
