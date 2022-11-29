@@ -17,6 +17,7 @@ function App() {
 
   const [pageWidth, setPagewidth] = React.useState(document.documentElement.scrollWidth);
   const [countCards, setCountCards] = React.useState(9);
+  const [addCountCards, setAddCountCards] = React.useState(3);
   const [cardTitle, setCardTitle] = React.useState('');
   const [openPopup, setOpenPopup] = React.useState(false);
   const [btnId, setBtnId] = React.useState(1);
@@ -54,14 +55,23 @@ function App() {
 
     if (pageWidth >= 1440) {
       setCountCards(9);
+      setAddCountCards(3);
       return;
     } else if (769 <= pageWidth < 1440) {
-      setCountCards(5);
+      setCountCards(6);
+      setAddCountCards(2);
       return;
     } else if (pageWidth < 480) {
       setCountCards(3);
+      setAddCountCards(2);
       return;
     }
+  }
+
+  function handleAddMoreCards() {
+    countCardsOnPage();
+    console.log(countCards);
+    setCountCards(countCards + addCountCards);
   }
 
   function newPageSize() {
@@ -82,10 +92,10 @@ function App() {
       <Profi />
       <Banner />
       <Route path='/mentor'>
-        <VacancyMentor countCards={countCards} clickOnVacancie={handleClickOnVacancie} />
+        <VacancyMentor countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
       </Route>
       <Route path='/review'>
-        <VacancyReview countCards={countCards} clickOnVacancie={handleClickOnVacancie} />
+        <VacancyReview countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
       </Route>
       <FeedBack />
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />

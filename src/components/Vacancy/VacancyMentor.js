@@ -3,15 +3,16 @@ import { Link, Route } from 'react-router-dom';
 import { vacancies } from '../utils/vacancies';
 import Vacancy from './Vacancy';
 
-function VacancyMentor({ countCards, clickOnVacancie }) {
+function VacancyMentor({ countCards, clickOnVacancie, addMoreCards }) {
 
   const [cards, setCards] = React.useState(vacancies);
   const [specs, setSpecs] = React.useState('programming');
   const [resultCards, setResultCards] = React.useState([]);
+  const [isNeedMoreButton, setNeedMoreButton] = React.useState(false);
 
   React.useEffect(() => {
     filterCards(specs, cards);
-  }, [specs])
+  }, [specs, countCards])
 
   function setProgramming() {
     setSpecs('programming');
@@ -33,10 +34,13 @@ function VacancyMentor({ countCards, clickOnVacancie }) {
     setSpecs('menegement');
   }
 
-
-
   function filterCards(specs, cards) {
-    setResultCards((cards.filter((i) => i.role === 'mentor').filter((i) => i.specs === specs)).slice(0, countCards));
+    var vacanciesOnFilter = (cards.filter((i) => i.role === 'mentor').filter((i) => i.specs === specs));
+    console.log(vacanciesOnFilter);
+    if (vacanciesOnFilter.length > countCards) {
+      setNeedMoreButton(true);
+    } else { setNeedMoreButton(false) }
+    setResultCards(vacanciesOnFilter.slice(0, countCards));
   }
 
   return (
@@ -202,6 +206,9 @@ function VacancyMentor({ countCards, clickOnVacancie }) {
             </div>
           </>
         }
+        <div className='vacancy__more'>
+          <button className={`vacancy__more-button ${isNeedMoreButton ? 'vacancy__more-button_active' : ''}`} type='button' onClick={addMoreCards}>Смотреть еще</button>
+        </div>
       </section>
     </>
   )

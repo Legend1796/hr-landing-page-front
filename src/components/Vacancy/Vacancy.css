@@ -5,7 +5,6 @@
 
 .vacancy__list {
   padding: 0 120px;
-  height: 850px;
 }
 
 .vacancy__title {
@@ -145,4 +144,31 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+}
+
+.vacancy__more {
+  display: flex;
+  margin: 0;
+  margin-top: 32px;
+  justify-content: flex-end;
+}
+
+.vacancy__more-button {
+  opacity: 1;
+  width: 165px;
+  height: 44px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 100px;
+  display: none;
+}
+
+.vacancy__more-button:hover {
+  transition: opacity .2s linear;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.vacancy__more-button_active {
+  display: block;
 }
