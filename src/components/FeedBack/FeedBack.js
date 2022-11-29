@@ -51,9 +51,7 @@ function FeedBack() {
         <div className='container-dots'>
           {Array.from({ length: 5 }).map((item, index) => (
             <div
-              onClick={() => moveDot(index + 1)}
-              className={slideIndex === index + 1 ? 'dot active' : 'dot'}
-            ></div>
+              onClick={() => moveDot(index + 1)} className={slideIndex === index + 1 ? 'dot active' : 'dot'} key={index} ></div>
           ))}
         </div>
       </div>
@@ -61,4 +59,4 @@ function FeedBack() {
   )
 }
 
-export default FeedBack;
+export default FeedBack; 
