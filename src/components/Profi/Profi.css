@@ -91,7 +91,7 @@
   line-height: 22px;
   color: white;
   padding: 0;
-  margin: 32px auto 16px;
+  margin: 0 auto 0;
   text-align: start;
 }
 
@@ -108,8 +108,9 @@
   margin: 0 auto 0 auto;
 }
 
-.profi__text-back:last-child {
-  margin: 0 auto;
+.profi__text-back:first-child {
+
+  margin: 32px auto 16px;
 }
 
 .profi__back-bottom {
