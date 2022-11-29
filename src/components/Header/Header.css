@@ -7,7 +7,7 @@
   justify-content: space-between;
   border-bottom: 1px solid black;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 5;
   background-color: white;
 }
@@ -30,4 +30,20 @@
 .header__link-text {
   padding: 0;
   margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header__send-request {
+  margin-right: 260px;
+  border: 1px solid black;
+  border-radius: 100px;
+  width: 198px;
+  height: 50px;
+  background-color: white;
+}
+
+.header__send-request:hover {
+  cursor: pointer;
 }

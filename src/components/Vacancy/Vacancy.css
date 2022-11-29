@@ -1,0 +1,135 @@
+.vacancy {
+  padding: 0 120px;
+  padding-top: 120px;
+}
+
+.vacancy__list {
+  padding: 0 120px;
+  height: 850px;
+}
+
+.vacancy__title {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.vacancy__links {
+  margin-top: 40px;
+  margin-bottom: 34px;
+  display: flex;
+  gap: 16px;
+}
+
+.vacancy__link {
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid black;
+  width: 141px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.vacancy__link-active {
+  color: white;
+  border: none;
+  background-color: #1D6BF3;
+}
+
+.vacancy__link-text {
+  padding: 0;
+  margin: 0;
+}
+
+.vacancy__choise {
+  padding: 0;
+  text-decoration: none;
+  padding: 6px 24px;
+  border-bottom: 2px solid #F0F1F3;
+}
+
+.vacancy__button:hover {
+  cursor: pointer;
+}
+
+.vacancy__button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: white;
+}
+
+.vacancy__choise-active {
+  border-bottom: 2px solid black;
+}
+
+.vacancy__table {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.vacancy__choise-text {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.vacancy__item {
+  width: 380px;
+  height: 214px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: black;
+  box-shadow: 2px 2px 15px rgba(16, 40, 84, 0.1);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.vacancy__item-title {
+  margin: 0;
+  margin-left: 24px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  align-self: flex-start;
+  width: 332px;
+  margin-top: 32px;
+}
+
+.vacancy__item-text {
+  margin: 0;
+  padding: 0;
+  width: 332px;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.vacancy__items {
+  padding: 0;
+  margin: 0;
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 28px;
+  justify-content: center;
+}
+
+.vacancy__not-found {
+  margin-top: 130px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
