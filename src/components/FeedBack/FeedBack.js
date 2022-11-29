@@ -7,7 +7,6 @@ function FeedBack() {
 
   return (
     <section className='feedback'>
-      {/* <div className='feedback__video-container'> */}
       <h3 className='feedback__title'>Отзывы</h3>
       <div className='feedback__video-container'>
         <img className='feedback__video' src={videoOne} alt='Постер отзыва' />
@@ -23,7 +22,6 @@ function FeedBack() {
             <img className='feedback__link' src={next} alt='Следующее видео' />
           </button>
         </div>
-        {/* </div> */}
       </div>
     </section >
   )

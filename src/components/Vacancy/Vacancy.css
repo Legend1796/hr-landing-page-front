@@ -91,6 +91,13 @@
   border-radius: 32px;
   display: flex;
   align-items: center;
+  scale: 1;
+}
+
+.vacancy__item:hover {
+  cursor: pointer;
+  transition: scale .5s linear;
+  scale: 1.1;
 }
 
 .vacancy__item-title {
@@ -113,6 +120,10 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+}
+
+.vacancy__item-text:last-child {
+  margin-top: 6px;
 }
 
 .vacancy__items {

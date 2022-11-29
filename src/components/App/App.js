@@ -10,6 +10,7 @@ import { Route, Redirect } from 'react-router-dom';
 import VacancyReview from '../Vacancy/VacancyReview';
 import Banner from '../Banner/Banner';
 import FeedBack from '../FeedBack/FeedBack';
+import Popup from '../Popup/Popup';
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
         <VacancyReview countCards={countCards} />
       </Route>
       <FeedBack />
+      <Popup />
     </div>
   );
 }
