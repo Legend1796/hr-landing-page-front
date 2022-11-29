@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import BtnFeedback from './BtnFeedback';
-import dataSlider from './dataSlider';
+import dataSlider from '../utils/dataSlider';
+import playFeedback from '../../images/play-feedback.svg';
 
-function Feedback() {
+function FeedBack() {
 
   const [slideIndex, setSlideIndex] = useState(1)
 
@@ -39,9 +40,14 @@ function Feedback() {
             </div>
           )
         })}
-        <BtnFeedback moveSlide={nextSlide} direction={'next'} />
-        <BtnFeedback moveSlide={prevSlide} direction={'prev'} />
-
+        <div className='feedback__container-buttons'>
+          <h3 className='feedback__subtitle'>«Всё моё наставничество — это челлендж»</h3>
+          <div className='feedback__buttons'>
+            <BtnFeedback moveSlide={prevSlide} direction={'prev'} />
+            <BtnFeedback moveSlide={nextSlide} direction={'next'} />
+          </div>
+        </div>
+        <img className='feedback__play-video' src={playFeedback} alt='play' />
         <div className='container-dots'>
           {Array.from({ length: 5 }).map((item, index) => (
             <div
@@ -55,4 +61,4 @@ function Feedback() {
   )
 }
 
-export default Feedback; 
+export default FeedBack;
