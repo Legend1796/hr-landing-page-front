@@ -36,10 +36,14 @@
 }
 
 .header__send-request {
-  margin-right: 300px;
+  margin-right: 260px;
   border: 1px solid black;
   border-radius: 100px;
   width: 198px;
   height: 50px;
   background-color: white;
+}
+
+.header__send-request:hover {
+  cursor: pointer;
 }

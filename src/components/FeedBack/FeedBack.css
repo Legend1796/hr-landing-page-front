@@ -38,3 +38,8 @@
   text-align: left;
   z-index: 1;
 }
+
+.feedback__send-request {
+  border: none;
+  background-color: rgba(red, green, blue, 0);
+}

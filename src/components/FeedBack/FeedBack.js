@@ -1,4 +1,6 @@
 import videoOne from '../../images/feedback-video-image.png';
+import next from '../../images/feedback-next.svg';
+import previous from '../../images/feedback-previous.svg';
 
 function FeedBack() {
 
@@ -11,10 +13,10 @@ function FeedBack() {
         <div className='feedback__video-front'>
           <p className='feedback__text'>«Всё моё наставничество — это челлендж»</p>
           <button className='feedback__send-request' type='button'>
-            <img className='feedback__link' alt='Предыдущее видео' />
+            <img className='feedback__link' src={previous} alt='Предыдущее видео' />
           </button>
           <button className='feedback__send-request' type='button'>
-            <img className='feedback__link' alt='Следующее видео' />
+            <img className='feedback__link' src={next} alt='Следующее видео' />
           </button>
         </div>
       </div>

@@ -1,5 +1,5 @@
 function Vacancy({ title, textPay, textCash, url }) {
-  console.log(textPay);
+
   return (
     <a className='vacancy__item' href={url} target='_blank' rel='noopener noreferrer'>
       <h3 className='vacancy__item-title'>{title}</h3>
