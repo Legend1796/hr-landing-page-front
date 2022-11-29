@@ -3,11 +3,6 @@
   display: block;
 }
 
-.feedback__video-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .feedback__title {
   text-align: left;
   font-weight: 500;
@@ -25,10 +20,10 @@
 }
 
 .feedback__video {
-  position: relative;
+
   z-index: -1;
-  margin-left: 0;
   padding: 0;
+  margin: 0;
 }
 
 .feedback__video-front {
@@ -39,7 +34,36 @@
   z-index: 1;
 }
 
+.feedback__video-play {
+  position: absolute;
+  bottom: calc(50% - 42px);
+  left: calc(50% - 42px);
+  z-index: 5;
+}
+
+.feedback__video-play:hover {
+  cursor: pointer;
+}
+
+.feedback__buttons {
+  display: flex;
+  gap: 20px
+}
+
+.feedback__video-container {
+  position: relative;
+}
+
 .feedback__send-request {
   border: none;
-  background-color: rgba(red, green, blue, 0);
+  padding: 0;
+  background-color: rgba(175, 175, 175, 0);
+}
+
+.feedback__link {
+  background-color: rgba(175, 175, 175, 0);
+}
+
+.feedback__send-request:hover {
+  cursor: pointer;
 }

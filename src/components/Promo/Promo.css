@@ -6,39 +6,19 @@
   overflow: hidden;
 }
 
-.promo__in {
-  position: absolute;
-  right: 247px;
-  top: 82px;
-}
-
 .promo__title {
   font-size: 80px;
   line-height: 80px;
-  margin: 211px auto;
+  margin: 211px auto 100px;
   position: relative;
   font-weight: 500;
   font-size: 80px;
   line-height: 80px;
 }
 
-.promo__line {
-  position: absolute;
-  display: flex;
-  margin: 0;
-  align-items: center;
-}
-
 .promo__bottom-сontainer {
   align-items: center;
-  margin-bottom: 120px;
-  margin-top: 411px;
-}
-
-.promo__bottom-image {
-  position: absolute;
-  right: 7px;
-  bottom: 102px;
+  margin: 80px auto 120px;
 }
 
 .promo__buttom {
@@ -63,61 +43,36 @@
 }
 
 .promo__paragrapf {
-  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
   overflow: hidden;
-}
-
-.promo__paragrapf_big {
   font-size: 56px;
   line-height: 60px;
-  margin-left: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  white-space: nowrap;
 }
 
-.promo__paragrapf_blue-huge {
-  font-size: 64px;
-  line-height: 69px;
-  color: #1D6BF3;
-  margin-left: 40px;
-}
-
-.promo__paragrapf_blue-big {
-  font-size: 56px;
-  line-height: 60px;
-  color: #1D6BF3;
-  margin-left: 72px;
-}
-
-.promo__paragrapf_blue-smallest {
-  font-size: 32px;
-  line-height: 60px;
-  color: #1D6BF3;
-}
-
-.promo__paragrapf_small {
-  font-size: 36px;
-  line-height: 60px;
-  margin-left: 172px;
-}
-
-.promo__paragrapf_blue-small {
-  font-size: 36px;
-  line-height: 60px;
-  color: #1D6BF3;
-  margin-left: 88px;
-}
-
-.promo__paragrapf_bottom {
-  font-size: 24px;
-  line-height: 28px;
+.promo__line {
+  margin: auto;
+  width: 100%;
 }
 
 .promo__line_first {
-  top: 331px;
-  left: -80px;
-  animation: 1s slidein linear infinite;
+  display: flex;
+  width: 220%;
+  margin-bottom: 30px;
+  animation: slidetext 6s linear infinite;
 }
 
-.promo__line_second {
+.promo__text {
+  margin: 0;
+  padding: 0;
+}
+
+/* .promo__line_second {
   top: 426px;
   left: -162px;
   animation: 4s slidein alternate ease-in-out infinite;
@@ -127,46 +82,14 @@
   top: 506px;
   left: -62px;
   animation: 5s slidein alternate ease-in-out infinite;
-}
+} */
 
-@keyframes slidein {
+@keyframes slidetext {
   0% {
     transform: translateX(0%);
   }
 
   100% {
-    transform: translateX(20%);
+    transform: translateX(-50%);
   }
-}
-
-
-@keyframes mymove {
-  from {
-    right: 100px;
-  }
-
-  to {
-    right: -1000px;
-  }
-}
-
-@keyframes early {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-.early {
-  animation: fadeIn ease-in 1;
-  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
-
-  animation-fill-mode: forwards;
-  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-
-  animation-duration: 1s;
-  animation-delay: 1.5s
 }
