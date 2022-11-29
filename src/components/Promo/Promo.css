@@ -62,7 +62,8 @@
 
 .promo__line_first {
   display: flex;
-  width: 220%;
+  /* width: 220%; */
+  width: 3200px;
   margin-bottom: 30px;
   animation: slidetext 6s linear infinite;
 }
@@ -86,10 +87,10 @@
 
 @keyframes slidetext {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-3%);
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-53%);
   }
 }

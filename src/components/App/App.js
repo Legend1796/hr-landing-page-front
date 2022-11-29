@@ -68,7 +68,7 @@ function App() {
         <VacancyReview countCards={countCards} clickOnVacancie={handleClickOnVacancie} />
       </Route>
       <FeedBack />
-      <Popup isOpen={true} title={cardTitle} onClose={handleCloseAllPopups} />
+      <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} />
     </div>
   );
 }

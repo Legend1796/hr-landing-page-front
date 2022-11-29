@@ -1,10 +1,10 @@
 function Popup({ isOpen, onClose, title }) {
 
   return (
-    <div className='popup popup_opened'>
+    // <div className='popup popup_opened'>
+    <div className={`popup ${isOpen && 'popup_opened'}`} >
       <div className='popup__container'>
         <div className='popup__top-container'>
-          {/* <div className={`popup ${isOpen && 'popup_opened'}`} > */}
           <h2 className='popup__title'>Наставник на курс «Мидл фронтенд-разработчик»</h2>
           {/* <h2 className='popup__title'>{title}</h2> */}
           <button onClick={onClose} className='popup__close' type='button' aria-label='Закрыть'></button>
