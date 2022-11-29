@@ -13,7 +13,7 @@ function FeedBack() {
         <img className='feedback__video' src={videoOne} alt='Постер отзыва' />
         <img className='feedback__video-play' src={play} alt='play' />
       </div>
-      <div className='feedback__video-front'>
+{/*       <div className='feedback__video-front'>
         <p className='feedback__text'>«Всё моё наставничество — это челлендж»</p>
         <div className='feedback__buttons'>
           <button className='feedback__send-request' type='button'>
@@ -23,8 +23,7 @@ function FeedBack() {
             <img className='feedback__link' src={next} alt='Следующее видео' />
           </button>
         </div>
-        {/* </div> */}
-      </div>
+      </div> */}
     </section >
   )
 }
