@@ -1,4 +1,95 @@
 .quiz {
-  height: 600px;
-  background-color: #387CF1;
+  background-color: #000000;
+  padding: 80px 0;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quiz__slider-and-jobs {
+  display: flex;
+  align-items: center;
+  margin: 0 0 60px;
+}
+
+.quiz__circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz__container {
+  width: 614px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 90px;
+}
+
+.quiz__line {
+  width: 576px;
+  height: 12px;
+  background: #FFFFFF;
+  border-radius: 32px;
+  position: absolute;
+}
+
+.quiz__question {
+  color: #1D6BF3;
+  z-index: 10;
+}
+
+.quiz__title {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 60px;
+  margin: 0 0 60px;
+}
+
+.quiz__job-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  width: 170px;
+  margin: 0;
+}
+
+.quiz__text {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 40px;
+  max-width: 350px;
+}
+
+.quiz__counter {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 20px;
+}
+
+.quiz__buttons {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.quiz__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  color: #FFFFFF;
 }
