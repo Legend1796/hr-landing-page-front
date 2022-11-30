@@ -41,6 +41,10 @@
   background-color: #1D6BF3;
 }
 
+.promo__text_blue {
+  color: #1D6BF3;
+}
+
 .promo__paragrapf {
   padding: 0;
   margin: 0;
@@ -60,7 +64,7 @@
 .promo__line_first {
   display: flex;
   /* width: 220%; */
-  width: 3200px;
+  width: 3600px;
   margin-bottom: 30px;
   animation: slidetext 6s linear infinite;
 }
