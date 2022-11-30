@@ -102,8 +102,8 @@ function App() {
       <Header />
       <Promo />
       <Expert />
-      {/* <Quiz executeScroll={executeScroll} /> */}
-      {/* <Roli /> */}
+      <Quiz executeScroll={executeScroll} />
+      <Roli />
       <Profi />
       <Banner />
       <Route path='/mentor'>
@@ -114,8 +114,8 @@ function App() {
       </Route>
       <FeedBack />
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
-      {/* <Forma /> */}
-      {/* <Footer /> */}
+      <Forma />
+      <Footer />
     </div>
   );
 }

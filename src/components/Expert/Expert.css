@@ -9,13 +9,16 @@
   font-style: normal;
   font-size: 40px;
   line-height: 44px;
-  margin: 120px auto 64px auto;
+  margin: 120px auto 40px auto;
   text-align: left;
 }
 
 .expert__cards {
   display: flex;
   align-items: center;
+  padding: 0;
+  gap: 29px;
+  margin: 0;
 }
 
 .expert__container {
@@ -23,17 +26,50 @@
   margin: 0 auto;
 }
 
-.expert__card {}
-
-.expert__card-paragraph {
-  width: 275px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: left;
-  margin-left: 30px;
+.expert__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  height: 352px;
 }
 
-.expert__bottom-image {
-  margin: 367px auto 120px;
+.expert__card-paragraph {
+  margin: 0;
+  padding: 0;
+  width: 275px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.expert__subtitle-container {
+  width: 114px;
+  min-height: 50px;
+  border-radius: 20px;
+  border: 1px solid #F0F1F3;
+  margin: 0;
+  margin-top: 25px;
+  text-align: center;
+  padding-top: 9px;
+}
+
+.expert__card-subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  padding-top: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.expert__image_position {
+  margin-top: 16px;
+}
+
+.expert__subtitle-container_position {
+  margin-top: 40px;
+  padding-top: 10px;
 }
