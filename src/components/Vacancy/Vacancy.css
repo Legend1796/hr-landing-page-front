@@ -38,6 +38,11 @@
   background-color: #1D6BF3;
 }
 
+.vacancy__link-active:hover {
+  transition: background-color .2s linear;
+  background-color: #215EC6;
+}
+
 .vacancy__link-text {
   padding: 0;
   margin: 0;
@@ -128,7 +133,7 @@
 }
 
 .vacancy__container {
-  width: 1240px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -179,6 +184,11 @@
   display: block;
 }
 
+.vacancy__filter {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 @media screen and (max-width: 1439px) {
   .vacancy__items {
     grid-template-columns: repeat(2, 1fr);
@@ -195,5 +205,32 @@
 
   .vacancy__container {
     width: 790px;
+  }
+
+  .vacancy__filter {
+    width: 790px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .vacancy {
+    padding: 0 16px;
+    padding-top: 100px;
+  }
+
+  .vacancy__list {
+    padding: 0 16px;
+  }
+
+  .vacancy__container {
+    width: 351px;
+  }
+
+  .vacancy__filter {
+    width: 351px;
+  }
+
+  .vacancy__items {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

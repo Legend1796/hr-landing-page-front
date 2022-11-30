@@ -15,30 +15,15 @@
 
 .expert__cards {
   display: flex;
-  position: relative;
-}
-
-.expert__card {
-  position: absolute;
-  display: flex;
   align-items: center;
 }
 
-.expert__card_first {
-  top: 15px;
-  left: 89px;
+.expert__container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.expert__card_second {
-  top: 189px;
-  left: 473px;
-}
-
-.expert__card_third {
-  top: -25px;
-  right: -4px;
-}
-
+.expert__card {}
 
 .expert__card-paragraph {
   width: 275px;

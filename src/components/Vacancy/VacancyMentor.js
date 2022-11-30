@@ -37,7 +37,6 @@ function VacancyMentor({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
 
   function filterCards(specs, cards) {
     var vacanciesOnFilter = (cards.filter((i) => i.role === 'mentor').filter((i) => i.specs === specs));
-    console.log(vacanciesOnFilter);
     if (vacanciesOnFilter.length > countCards) {
       setNeedMoreButton(true);
     } else { setNeedMoreButton(false) }
@@ -47,147 +46,150 @@ function VacancyMentor({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
   return (
     <>
       <section className='vacancy' ref={vacancyRef} id='vacancy'>
-        <h1 className='vacancy__title'>Кого мы ищем</h1>
-        <div className='vacancy__links'>
-          <Link className='vacancy__link vacancy__link-active' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>
-          <Link className='vacancy__link' to='/review/programming'><p className='vacancy__link-text'>Ревьюеров</p></Link>
-        </div>
-        <div className='vacancy__table'>
-          <Route path='/mentor/programming'>
-            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/programming'>
-              <button type='button' onClick={setProgramming} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Программирование</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/analitics'>
-              <button type='button' onClick={setAnalitics} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Аналитика</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/design'>
-              <button type='button' onClick={setDesigh} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Дизайн</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/marketing'>
-              <button type='button' onClick={setMarketing} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Маркетинг</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/menegement'>
-              <button type='button' onClick={setMenegement} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Менеджмент</p>
-              </button>
-            </Link>
-          </Route>
-          <Route path='/mentor/analitics'>
-            <Link className='vacancy__choise' to='/mentor/programming'>
-              <button type='button' onClick={setProgramming} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Программирование</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise  vacancy__choise-active' to='/mentor/analitics'>
-              <button type='button' onClick={setAnalitics} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Аналитика</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/design'>
-              <button type='button' onClick={setDesigh} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Дизайн</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/marketing'>
-              <button type='button' onClick={setMarketing} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Маркетинг</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/menegement'>
-              <button type='button' onClick={setMenegement} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Менеджмент</p>
-              </button>
-            </Link>
-          </Route>
-          <Route path='/mentor/design'>
-            <Link className='vacancy__choise' to='/mentor/programming'>
-              <button type='button' onClick={setProgramming} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Программирование</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/analitics'>
-              <button type='button' onClick={setAnalitics} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Аналитика</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/design'>
-              <button type='button' onClick={setDesigh} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Дизайн</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/marketing'>
-              <button type='button' onClick={setMarketing} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Маркетинг</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/menegement'>
-              <button type='button' onClick={setMenegement} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Менеджмент</p>
-              </button>
-            </Link>
-          </Route>
-          <Route path='/mentor/marketing'>
-            <Link className='vacancy__choise' to='/mentor/programming'>
-              <button type='button' onClick={setProgramming} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Программирование</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/analitics'>
-              <button type='button' onClick={setAnalitics} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Аналитика</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/design'>
-              <button type='button' onClick={setDesigh} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Дизайн</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/marketing'>
-              <button type='button' onClick={setMarketing} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Маркетинг</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/menegement'>
-              <button type='button' onClick={setMenegement} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Менеджмент</p>
-              </button>
-            </Link>
-          </Route>
-          <Route path='/mentor/menegement'>
-            <Link className='vacancy__choise' to='/mentor/programming'>
-              <button type='button' onClick={setProgramming} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Программирование</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/analitics'>
-              <button type='button' onClick={setAnalitics} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Аналитика</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/design'>
-              <button type='button' onClick={setDesigh} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Дизайн</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise' to='/mentor/marketing'>
-              <button type='button' onClick={setMarketing} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Маркетинг</p>
-              </button>
-            </Link>
-            <Link className='vacancy__choise vacancy__choise-active' to='/mentor/menegement'>
-              <button type='button' onClick={setMenegement} className='vacancy__button'>
-                <p className='vacancy__choise-text'>Менеджмент</p>
-              </button>
-            </Link>
-          </Route>
+        <div className='vacancy__filter'>
+
+          <h1 className='vacancy__title'>Кого мы ищем</h1>
+          <div className='vacancy__links'>
+            <Link className='vacancy__link vacancy__link-active' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>
+            <Link className='vacancy__link' to='/review/programming'><p className='vacancy__link-text'>Ревьюеров</p></Link>
+          </div>
+          <div className='vacancy__table'>
+            <Route path='/mentor/programming'>
+              <Link className='vacancy__choise vacancy__choise-active' to='/mentor/programming'>
+                <button type='button' onClick={setProgramming} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Программирование</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/analitics'>
+                <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Аналитика</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/design'>
+                <button type='button' onClick={setDesigh} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Дизайн</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/marketing'>
+                <button type='button' onClick={setMarketing} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Маркетинг</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/menegement'>
+                <button type='button' onClick={setMenegement} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Менеджмент</p>
+                </button>
+              </Link>
+            </Route>
+            <Route path='/mentor/analitics'>
+              <Link className='vacancy__choise' to='/mentor/programming'>
+                <button type='button' onClick={setProgramming} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Программирование</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise  vacancy__choise-active' to='/mentor/analitics'>
+                <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Аналитика</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/design'>
+                <button type='button' onClick={setDesigh} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Дизайн</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/marketing'>
+                <button type='button' onClick={setMarketing} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Маркетинг</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/menegement'>
+                <button type='button' onClick={setMenegement} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Менеджмент</p>
+                </button>
+              </Link>
+            </Route>
+            <Route path='/mentor/design'>
+              <Link className='vacancy__choise' to='/mentor/programming'>
+                <button type='button' onClick={setProgramming} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Программирование</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/analitics'>
+                <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Аналитика</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise vacancy__choise-active' to='/mentor/design'>
+                <button type='button' onClick={setDesigh} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Дизайн</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/marketing'>
+                <button type='button' onClick={setMarketing} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Маркетинг</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/menegement'>
+                <button type='button' onClick={setMenegement} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Менеджмент</p>
+                </button>
+              </Link>
+            </Route>
+            <Route path='/mentor/marketing'>
+              <Link className='vacancy__choise' to='/mentor/programming'>
+                <button type='button' onClick={setProgramming} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Программирование</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/analitics'>
+                <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Аналитика</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/design'>
+                <button type='button' onClick={setDesigh} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Дизайн</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise vacancy__choise-active' to='/mentor/marketing'>
+                <button type='button' onClick={setMarketing} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Маркетинг</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/menegement'>
+                <button type='button' onClick={setMenegement} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Менеджмент</p>
+                </button>
+              </Link>
+            </Route>
+            <Route path='/mentor/menegement'>
+              <Link className='vacancy__choise' to='/mentor/programming'>
+                <button type='button' onClick={setProgramming} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Программирование</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/analitics'>
+                <button type='button' onClick={setAnalitics} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Аналитика</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/design'>
+                <button type='button' onClick={setDesigh} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Дизайн</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise' to='/mentor/marketing'>
+                <button type='button' onClick={setMarketing} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Маркетинг</p>
+                </button>
+              </Link>
+              <Link className='vacancy__choise vacancy__choise-active' to='/mentor/menegement'>
+                <button type='button' onClick={setMenegement} className='vacancy__button'>
+                  <p className='vacancy__choise-text'>Менеджмент</p>
+                </button>
+              </Link>
+            </Route>
+          </div>
         </div>
       </section>
       <section className='vacancy__list'>
