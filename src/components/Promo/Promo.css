@@ -1,9 +1,9 @@
 .promo {
   margin: 0;
   padding: 0 120px;
-  border-bottom: 1px solid #1A1B22;
   position: relative;
   overflow: hidden;
+  box-shadow: 2px 2px 15px rgba(16, 40, 84, 0.1);
 }
 
 .promo__title {
@@ -64,7 +64,7 @@
 .promo__line_first {
   display: flex;
   /* width: 220%; */
-  width: 3600px;
+  width: 4000px;
   margin-bottom: 30px;
   animation: slidetext 6s linear infinite;
 }
