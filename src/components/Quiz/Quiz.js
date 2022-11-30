@@ -636,7 +636,7 @@ function Quiz({ executeScroll }) {
 
 
   return (
-    <section className={`quiz ${isActive ? 'quiz_result-active' : ''}`}>
+    <section className={`quiz ${isActive ? 'quiz_result-active' : ''}`} id='quiz' >
       <div className='quiz__container'>
         <h2 className="quiz__title">Кто ты?</h2>
         <div className="quiz__slider-and-jobs">

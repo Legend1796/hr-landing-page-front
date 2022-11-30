@@ -11,22 +11,23 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  width: 268px;
+  width: 333px;
   height: 50px;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   border: none;
   color: white;
-  background-color: #215EC6;
+  background-color: #1D6BF3;
   border-radius: 100px;
   margin: 0;
   padding: 0;
-  opacity: 1;
 }
 
 .banner__button:hover {
+  transition: background-color .2s linear;
   cursor: pointer;
+  background-color: #215EC6;
 }
 
 
@@ -41,4 +42,37 @@
   margin: 0;
   padding: 0;
   text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1439px) {
+  .banner {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .banner {
+    padding: 36px 16px;
+    flex-direction: column;
+    height: 112px;
+    justify-content: space-between;
+  }
+
+  .banner__text {
+    width: 343px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .banner__button {
+    width: 343px;
+    font-size: 18px;
+    line-height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

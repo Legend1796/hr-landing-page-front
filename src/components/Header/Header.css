@@ -10,7 +10,8 @@
   right: 0;
   left: 0;
   z-index: 5;
-  background-color: black;
+  background-color: white;
+  border: 1px solid #F0F1F3;
 }
 
 .header__logo {
@@ -25,7 +26,7 @@
 
 .header__link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .header__link-text {
@@ -37,21 +38,33 @@
 }
 
 .header__send-request {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 100px;
   width: 198px;
   height: 50px;
-  background-color: black;
+  background-color: white;
 }
 
 .header__send-request:hover {
   cursor: pointer;
   transition: background-color .2s linear;
   background-color: #1D6BF3;
+  border: none;
+  color: white;
+}
+
+.header__send-request:hover .header__link {
+  color: white;
 }
 
 @media screen and (max-width: 1439px) {
   .header {
     padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .header {
+    padding: 0 16px;
   }
 }
