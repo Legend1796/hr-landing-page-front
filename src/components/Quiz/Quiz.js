@@ -313,7 +313,7 @@ function Quiz({ executeScroll }) {
       )
       setResultTitle('Тебе ближе роль ревьюера!');
       setResultLink('/review/programming');
-    } else if (quizMentorStateRef.current === -4 && quizReviewStateRef.current === -4) {
+    } else if (quizMentorStateRef.current === 0 && quizReviewStateRef.current === 0) {
       setResultImage(<svg className='quiz__result-image' width="285" height="320" viewBox="0 0 285 320" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M87.8091 199.031C87.8091 199.031 93.7327 164.557 96.1811 157.751C97.899 153.053 104.928 141.204 109.954 132.418C110.941 130.645 117.437 126.35 120.547 124.706C124.733 122.499 132.621 126.055 133.194 135.136C133.431 138.909 126.994 143.213 125.197 147.182C122.67 152.757 122.502 159.987 122.294 161.169C121.939 163.139 135.889 178.563 135.277 184.433C134.665 190.304 118.493 210.446 114.989 211.608C111.484 212.771 87.9177 204.714 87.8091 199.031Z" fill="#1D6BF3" />
         <path d="M116.549 139.618C119.698 141.933 124.733 143.311 127.409 143.942C129.946 140.938 133.332 137.904 133.164 135.136C132.592 126.055 124.713 122.499 120.527 124.706C117.615 126.309 114.832 128.137 112.205 130.172C112.205 130.172 112.066 136.328 116.549 139.618Z" fill="#D6D6D6" />
@@ -600,9 +600,6 @@ function Quiz({ executeScroll }) {
   }
 
   function handleWantClick() {
-    if (quizCounter.current === 8) {
-      setIsActive(true);
-    }
     if (text[quizCounter.current - 1].isReview) {
       ++quizReviewStateRef.current;
       ++quizStateRef.current;
@@ -622,33 +619,17 @@ function Quiz({ executeScroll }) {
       checkForResult();
       setIsActive(true);
     }
-    console.log(quizMentorStateRef.current)
-    console.log(quizReviewStateRef.current)
     setQuizText(text[quizCounter.current - 1].paragraph)
   }
 
   function handleDontWantClick() {
-    if (text[quizCounter.current - 1].isReview) {
-      --quizReviewStateRef.current;
-      if (circlePosition.current !== 0) {
-        --circlePosition.current;
-      }
-      --quizStateRef.current;
-      checkQuizStateRef(quizStateRef.current);
-    } else {
-      ++quizStateRef.current;
-      ++circlePosition.current;
-      checkQuizStateRef(quizStateRef.current);
-      --quizMentorStateRef.current;
-    }
+    checkQuizStateRef(quizStateRef.current);
     if (quizCounter.current !== 8) {
       ++quizCounter.current;
     } else {
       checkForResult();
       setIsActive(true);
     }
-    console.log(quizMentorStateRef.current)
-    console.log(quizReviewStateRef.current)
     setQuizText(text[quizCounter.current - 1].paragraph);
   }
 
