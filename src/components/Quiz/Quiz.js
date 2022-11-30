@@ -622,8 +622,6 @@ function Quiz({ executeScroll }) {
       checkForResult();
       setIsActive(true);
     }
-    console.log(quizMentorStateRef.current)
-    console.log(quizReviewStateRef.current)
     setQuizText(text[quizCounter.current - 1].paragraph)
   }
 
@@ -647,8 +645,6 @@ function Quiz({ executeScroll }) {
       checkForResult();
       setIsActive(true);
     }
-    console.log(quizMentorStateRef.current)
-    console.log(quizReviewStateRef.current)
     setQuizText(text[quizCounter.current - 1].paragraph);
   }
 
