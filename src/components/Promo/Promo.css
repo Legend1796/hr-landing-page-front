@@ -33,13 +33,12 @@
   border-radius: 100px;
   margin: 0;
   padding: 0;
-  opacity: 1;
 }
 
 .promo__buttom:hover {
   cursor: pointer;
-  transition: opacity .2s linear;
-  opacity: .8;
+  transition: background-color .2s linear;
+  background-color: #1D6BF3;
 }
 
 .promo__paragrapf {
@@ -62,7 +61,8 @@
 
 .promo__line_first {
   display: flex;
-  width: 220%;
+  /* width: 220%; */
+  width: 3200px;
   margin-bottom: 30px;
   animation: slidetext 6s linear infinite;
 }
@@ -86,10 +86,10 @@
 
 @keyframes slidetext {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-3%);
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-53%);
   }
 }

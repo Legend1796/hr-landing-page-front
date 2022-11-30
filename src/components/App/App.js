@@ -10,6 +10,8 @@ import { Route, Redirect } from 'react-router-dom';
 import VacancyReview from '../Vacancy/VacancyReview';
 import Banner from '../Banner/Banner';
 import FeedBack from '../FeedBack/FeedBack';
+import Popup from '../Popup/Popup';
+import * as popupTexts from '../utils/texts';
 import Footer from '../Footer/Footer';
 import Roli from '../Roli/Roli';
 import Forma from '../Forma/Forma';
@@ -18,6 +20,11 @@ function App() {
 
   const [pageWidth, setPagewidth] = React.useState(document.documentElement.scrollWidth);
   const [countCards, setCountCards] = React.useState(9);
+  const [addCountCards, setAddCountCards] = React.useState(3);
+  const [cardTitle, setCardTitle] = React.useState('');
+  const [openPopup, setOpenPopup] = React.useState(false);
+  const [btnId, setBtnId] = React.useState(1);
+  const [texts, setTexts] = React.useState(popupTexts.texts1);
 
   const vacancyRef = React.useRef(null);
 
@@ -27,18 +34,58 @@ function App() {
 
   window.onresize = newPageSize;
 
+  React.useEffect(() => {
+    countCardsOnPage();
+  }, [pageWidth])
+
+
+  function handleActivateButton(num) {
+    setBtnId(num);
+    if (num === 1) {
+      setTexts(popupTexts.texts1);
+    } else if (num === 2) {
+      setTexts(popupTexts.texts2);
+    } else if (num === 3) {
+      setTexts(popupTexts.texts3);
+    } else if (num === 4) {
+      setTexts(popupTexts.texts4);
+    } else if (num === 5) {
+      setTexts(popupTexts.texts5);
+    } else {
+      setTexts(popupTexts.texts6);
+    }
+  }
+
+  function handleClickOnVacancie(title) {
+    setCardTitle(title);
+    setOpenPopup(true);
+  }
+
+  function handleCloseAllPopups() {
+    setOpenPopup(false);
+  }
+
   function countCardsOnPage() {
 
     if (pageWidth >= 1440) {
       setCountCards(9);
+      setAddCountCards(3);
       return;
     } else if (769 <= pageWidth < 1440) {
-      setCountCards(5);
+      setCountCards(6);
+      setAddCountCards(2);
       return;
     } else if (pageWidth < 480) {
       setCountCards(3);
+      setAddCountCards(2);
       return;
     }
+  }
+
+  function handleAddMoreCards() {
+    countCardsOnPage();
+    console.log(countCards);
+    setCountCards(countCards + addCountCards);
   }
 
   function newPageSize() {
@@ -60,12 +107,13 @@ function App() {
       <Profi />
       <Banner />
       <Route path='/mentor'>
-        <VacancyMentor vacancyRef={vacancyRef} countCards={countCards} />
+        <VacancyMentor vacancyRef={vacancyRef} countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
       </Route>
       <Route path='/review'>
-        <VacancyReview vacancyRef={vacancyRef} countCards={countCards} />
+        <VacancyReview vacancyRef={vacancyRef} countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
       </Route>
       <FeedBack />
+      <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
       <Forma />
       <Footer />
     </div>

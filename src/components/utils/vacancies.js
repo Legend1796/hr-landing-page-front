@@ -147,7 +147,7 @@ export const vacancies = [
   },
 
   {
-    id: '16',
+    id: '36',
     role: 'mentor',
     specs: 'analitics',
     title: 'Наставник на курс «Инженер данных»',
