@@ -66,16 +66,15 @@ function App() {
   }
 
   function countCardsOnPage() {
-
     if (pageWidth >= 1440) {
       setCountCards(9);
       setAddCountCards(3);
       return;
-    } else if (769 <= pageWidth < 1440) {
+    } else if (pageWidth > 768) {
       setCountCards(6);
       setAddCountCards(2);
       return;
-    } else if (pageWidth < 480) {
+    } else if (768 > pageWidth) {
       setCountCards(3);
       setAddCountCards(2);
       return;
@@ -84,14 +83,24 @@ function App() {
 
   function handleAddMoreCards() {
     countCardsOnPage();
-    console.log(countCards);
     setCountCards(countCards + addCountCards);
   }
 
   function newPageSize() {
     setTimeout(() => {
-      setPagewidth(document.documentElement.scrollWidth)
+      setPagewidth(getWidth())
     }, 1000)
+  }
+
+  function getWidth() {
+
+    if (document.documentElement && document.documentElement.clientWidth) {
+      return document.documentElement.clientWidth;
+    }
+
+    if (document.body) {
+      return document.body.clientWidth;
+    }
   }
 
   return (
@@ -104,7 +113,7 @@ function App() {
       <Expert />
       <Quiz executeScroll={executeScroll} />
       <Roli />
-      <Profi />
+      <Profi pageWidth={pageWidth} />
       <Banner />
       <Route path='/mentor'>
         <VacancyMentor vacancyRef={vacancyRef} countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
