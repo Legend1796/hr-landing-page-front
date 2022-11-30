@@ -18,8 +18,8 @@ function Navigation({ isOpen, onClose }) {
         <p className='navigation__number'>8-800-700-93-29</p>
         <p className='navigation__free-call'>Звонок по России бесплатный</p>
       </div>
-      <button className='header__send-request' type='button'>
-        <a className='header__link' href='#send'><p className='header__link-text'>Оставить заявку</p></a>
+      <button className='navigation__send-request' type='button'>
+        <a className='navigation__link-request' href='#send'><p className='header__link-text'>Оставить заявку</p></a>
       </button>
     </div >
   )
