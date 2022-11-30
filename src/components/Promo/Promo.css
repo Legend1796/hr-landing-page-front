@@ -46,8 +46,6 @@
   margin: 0;
   font-weight: 400;
   overflow: hidden;
-  font-size: 56px;
-  line-height: 60px;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -70,19 +68,19 @@
 .promo__text {
   margin: 0;
   padding: 0;
+  font-size: 56px;
+  line-height: 60px;
 }
 
-/* .promo__line_second {
-  top: 426px;
-  left: -162px;
-  animation: 4s slidein alternate ease-in-out infinite;
+.promo__text_small {
+  font-size: 48px;
+  line-height: 52px;
 }
 
-.promo__line_third {
-  top: 506px;
-  left: -62px;
-  animation: 5s slidein alternate ease-in-out infinite;
-} */
+.promo__text_smallest {
+  font-size: 28px;
+  line-height: 36px;
+}
 
 @keyframes slidetext {
   0% {

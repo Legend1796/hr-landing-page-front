@@ -197,8 +197,7 @@ function VacancyMentor({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
 
           {resultCards.length === 0
             ?
-            <p className='vacancy__not-found'>Таких вакансий пока нет 😊
-              Чтобы посмотреть другие, поменяйте роль или направление.</p>
+            <p className='vacancy__not-found'>Таких вакансий пока нет. <br />Чтобы посмотреть другие, поменяйте роль или направление.</p>
             :
             <>
               <ul className='vacancy__items'>

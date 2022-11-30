@@ -103,7 +103,7 @@
 .vacancy__item:hover {
   cursor: pointer;
   transition: scale .5s linear;
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .vacancy__item-title {
@@ -150,10 +150,11 @@
 }
 
 .vacancy__not-found {
-  margin-top: 130px;
+  margin-top: 30px;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  text-align: left;
 }
 
 .vacancy__more {
