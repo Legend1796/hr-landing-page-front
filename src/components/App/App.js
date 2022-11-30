@@ -17,6 +17,12 @@ function App() {
   const [pageWidth, setPagewidth] = React.useState(document.documentElement.scrollWidth);
   const [countCards, setCountCards] = React.useState(9);
 
+  const vacancyRef = React.useRef(null);
+
+  function executeScroll() {
+    vacancyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   window.onresize = newPageSize;
 
   function countCardsOnPage() {
@@ -47,14 +53,14 @@ function App() {
       <Header />
       <Promo />
       <Expert />
-      <Quiz />
+      <Quiz executeScroll={executeScroll} />
       <Profi />
       <Banner />
       <Route path='/mentor'>
-        <VacancyMentor countCards={countCards} />
+        <VacancyMentor vacancyRef={vacancyRef} countCards={countCards} />
       </Route>
       <Route path='/review'>
-        <VacancyReview countCards={countCards} />
+        <VacancyReview vacancyRef={vacancyRef} countCards={countCards} />
       </Route>
       <FeedBack />
       <Footer />

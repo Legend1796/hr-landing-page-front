@@ -3,7 +3,7 @@ import { Link, Route } from 'react-router-dom';
 import { vacancies } from '../utils/vacancies';
 import Vacancy from './Vacancy';
 
-function VacancyMentor({ countCards }) {
+function VacancyMentor({ countCards, vacancyRef }) {
 
   const [cards, setCards] = React.useState(vacancies);
   const [specs, setSpecs] = React.useState('programming');
@@ -41,7 +41,7 @@ function VacancyMentor({ countCards }) {
 
   return (
     <>
-      <section className='vacancy' id='vacancy'>
+      <section className='vacancy' ref={vacancyRef} id='vacancy'>
         <h1 className='vacancy__title'>Кого мы ищем</h1>
         <div className='vacancy__links'>
           <Link className='vacancy__link vacancy__link-active' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>
