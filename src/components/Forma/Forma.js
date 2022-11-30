@@ -1,4 +1,3 @@
-import './Forma.css'
 import { useForm } from 'react-hook-form';
 
 const Forma = () => {
@@ -54,11 +53,11 @@ const Forma = () => {
                 <label htmlFor="user-profi" className="formaSauvka__text-label formaSauvka__text-label_3"></label>    
                 <select className="formaSauvka__profi" name="profi" id="profi-select">
                     <option value="">* Направление</option>
-                    <option value="programm">Программирование</option>
-                    <option value="analiz">Анализ данных</option>
-                    <option value="dizain">Дизайн</option>
-                    <option value="marketing">Маркетинг</option>
-                    <option value="menegment">Менеджмент</option>
+                    <option className="formaSauvka__profis" value="programm">Программирование</option>
+                    <option className="formaSauvka__profis" value="analiz">Анализ данных</option>
+                    <option className="formaSauvka__profis" value="dizain">Дизайн</option>
+                    <option className="formaSauvka__profis" value="marketing">Маркетинг</option>
+                    <option className="formaSauvka__profis" value="menegment">Менеджмент</option>
                 </select>
 
                 <label htmlFor="user-portfolio" className="formaSauvka__text-label formaSauvka__text-label_4">Ссылка на портфолио</label>    
@@ -75,13 +74,13 @@ const Forma = () => {
                 />
                 {errors?.portfolio && <span className="formaSauvka__text-error">{errors.portfolio.message}</span>}
                 
-                <label htmlFor="user-stek" className="formaSauvka__text-label">Навыки и инструменты</label>
-                <textarea id="user-stek" className="formaSauvka__inputs formaSauvka__inputs_stek" 
+                <textarea id="user-stek" className="formaSauvka__inputs_stek" 
                     {...register('stek', {
                         required: "Нужно заполнить"
                     })}  
                     rows="5"
-                    cols="60">
+                    cols="60"
+                    placeholder='Навыки и инструменты'>
                 </textarea> 
                 {errors?.stek && <span className="formaSauvka__text_error">{errors.stek.message}</span>}
 

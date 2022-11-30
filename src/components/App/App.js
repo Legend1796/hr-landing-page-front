@@ -11,8 +11,8 @@ import VacancyReview from '../Vacancy/VacancyReview';
 import Banner from '../Banner/Banner';
 import FeedBack from '../FeedBack/FeedBack';
 import Footer from '../Footer/Footer';
-import Roli from '../Roli';
-import Forma from '../Forma';
+import Roli from '../Roli/Roli';
+import Forma from '../Forma/Forma';
 
 function App() {
 

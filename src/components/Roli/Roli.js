@@ -1,4 +1,3 @@
-import './Roli.css'
 import simbol1 from '../../images/simbol1.svg'
 import simbol2 from '../../images/simbol2.svg'
 import simbol3 from '../../images/simbol3.svg'
