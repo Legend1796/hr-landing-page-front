@@ -35,29 +35,30 @@ function Quiz({ executeScroll }) {
       isReview: false
     },
     {
-      paragraph: 'отвечать на вопросы студентов в чате',
-      isReview: false
-    },
-    {
-      paragraph: 'проводить вебинары 2 раза в месяц и давать обратную связь',
-      isReview: false
-    },
-    {
-      paragraph: 'делиться опытом и мотивировать',
-      isReview: false
-    },
-    {
       paragraph: 'проверять код и проекты студентов',
       isReview: true
+    },
+    {
+      paragraph: 'отвечать на вопросы студентов в чате',
+      isReview: false
     },
     {
       paragraph: 'простыми словами объяснять им их ошибки',
       isReview: true
     },
     {
+      paragraph: 'проводить вебинары 2 раза в месяц и давать обратную связь',
+      isReview: false
+    },
+    {
       paragraph: 'давать корректирующую обратную связь',
       isReview: true
     },
+    {
+      paragraph: 'делиться опытом и мотивировать',
+      isReview: false
+    },
+
     {
       paragraph: 'оценивать работы — зачёт/незачёт',
       isReview: true
