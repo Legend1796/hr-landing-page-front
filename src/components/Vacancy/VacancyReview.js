@@ -3,7 +3,7 @@ import { Link, Route } from 'react-router-dom';
 import { vacancies } from '../utils/vacancies';
 import Vacancy from './Vacancy';
 
-function VacancyReview({ countCards, clickOnVacancie, addMoreCards }) {
+function VacancyReview({ countCards, vacancyRef, clickOnVacancie, addMoreCards }) {
 
   const [cards, setCards] = React.useState(vacancies);
   const [specs, setSpecs] = React.useState('programming');
@@ -50,7 +50,7 @@ function VacancyReview({ countCards, clickOnVacancie, addMoreCards }) {
 
   return (
     <>
-      <section className='vacancy'>
+      <section className='vacancy' ref={vacancyRef}>
         <h1 className='vacancy__title'>Кого мы ищем</h1>
         <div className='vacancy__links'>
           <Link className='vacancy__link' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>

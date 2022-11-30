@@ -12,6 +12,9 @@ import Banner from '../Banner/Banner';
 import FeedBack from '../FeedBack/FeedBack';
 import Popup from '../Popup/Popup';
 import * as popupTexts from '../utils/texts';
+import Footer from '../Footer/Footer';
+import Roli from '../Roli/Roli';
+import Forma from '../Forma/Forma';
 
 function App() {
 
@@ -22,6 +25,12 @@ function App() {
   const [openPopup, setOpenPopup] = React.useState(false);
   const [btnId, setBtnId] = React.useState(1);
   const [texts, setTexts] = React.useState(popupTexts.texts1);
+
+  const vacancyRef = React.useRef(null);
+
+  function executeScroll() {
+    vacancyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 
   window.onresize = newPageSize;
 
@@ -93,17 +102,20 @@ function App() {
       <Header />
       <Promo />
       <Expert />
-      <Quiz />
+      <Quiz executeScroll={executeScroll} />
+      <Roli />
       <Profi />
       <Banner />
       <Route path='/mentor'>
-        <VacancyMentor countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
+        <VacancyMentor vacancyRef={vacancyRef} countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
       </Route>
       <Route path='/review'>
-        <VacancyReview countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
+        <VacancyReview vacancyRef={vacancyRef} countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
       </Route>
       <FeedBack />
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
+      <Forma />
+      <Footer />
     </div>
   );
 }
