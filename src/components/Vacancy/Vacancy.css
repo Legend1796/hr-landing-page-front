@@ -154,7 +154,6 @@
 }
 
 .vacancy__more-button {
-  opacity: 1;
   width: 165px;
   height: 44px;
   border: 1px solid black;
@@ -164,8 +163,10 @@
 }
 
 .vacancy__more-button:hover {
-  transition: opacity .2s linear;
-  opacity: .6;
+  transition: background-color .2s linear;
+  background-color: #1D6BF3;
+  border: none;
+  color: white;
   cursor: pointer;
 }
 

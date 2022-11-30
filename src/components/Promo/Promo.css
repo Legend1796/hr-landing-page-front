@@ -33,13 +33,12 @@
   border-radius: 100px;
   margin: 0;
   padding: 0;
-  opacity: 1;
 }
 
 .promo__buttom:hover {
   cursor: pointer;
-  transition: opacity .2s linear;
-  opacity: .8;
+  transition: background-color .2s linear;
+  background-color: #1D6BF3;
 }
 
 .promo__paragrapf {

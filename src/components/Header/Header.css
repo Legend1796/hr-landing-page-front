@@ -5,11 +5,10 @@
   height: 110px;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
   position: fixed;
   width: 100vw;
   z-index: 5;
-  background-color: white;
+  background-color: black;
 }
 
 .header__logo {
@@ -24,7 +23,7 @@
 
 .header__link {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .header__link-text {
@@ -37,13 +36,15 @@
 
 .header__send-request {
   margin-right: 260px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 100px;
   width: 198px;
   height: 50px;
-  background-color: white;
+  background-color: black;
 }
 
 .header__send-request:hover {
   cursor: pointer;
+  transition: background-color .2s linear;
+  background-color: #1D6BF3;
 }

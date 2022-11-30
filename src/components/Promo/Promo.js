@@ -11,7 +11,6 @@ function Promo() {
             <p className='promo__text'>дизайне</p>
             <p className='promo__text'>анализе</p>
             <p className='promo__text'>данных</p>
-            {/* <p className='promo__text'>менеджмент</p> */}
             <p className='promo__text'>маркетинге</p>
           </h3>
           <h3 className='promo__paragrapf'>
