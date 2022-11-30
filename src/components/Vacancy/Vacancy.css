@@ -171,6 +171,9 @@
   background-color: white;
   border-radius: 100px;
   display: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .vacancy__more-button:hover {
@@ -224,7 +227,7 @@
   }
 
   .vacancy__container {
-    width: 351px;
+    width: 345px;
   }
 
   .vacancy__filter {
@@ -233,5 +236,37 @@
 
   .vacancy__items {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .vacancy__item {
+    width: 342px;
+    justify-content: flex-start;
+    height: 160px;
+  }
+
+  .vacancy__item-title {
+    width: 250px;
+    height: auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 16px;
+  }
+
+  .vacancy__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 16px;
+    align-self: flex-start;
+  }
+
+  .vacancy__more-button {
+    width: 342px;
   }
 }

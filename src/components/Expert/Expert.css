@@ -22,7 +22,7 @@
 }
 
 .expert__container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -47,7 +47,7 @@
 
 .expert__subtitle-container {
   width: 114px;
-  min-height: 50px;
+  height: 50px;
   border-radius: 20px;
   border: 1px solid #F0F1F3;
   margin: 0;
@@ -72,4 +72,119 @@
 .expert__subtitle-container_position {
   margin-top: 40px;
   padding-top: 10px;
+}
+
+.expert__text-block {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1140px) {
+
+  .expert__container {
+    max-width: 358px;
+    margin: 0 auto;
+  }
+
+  .expert {
+    padding: 0 60px;
+  }
+
+  .expert__title {
+    padding: 0;
+    font-size: 28px;
+    line-height: 36px;
+    margin: 100px auto 30px auto;
+    text-align: left;
+  }
+
+  .expert__cards {
+    flex-direction: column;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .expert {
+    padding: 0;
+  }
+
+  .expert__card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 280px;
+    height: 115px;
+  }
+
+  .expert__image {
+    /* position: absolute; */
+    bottom: 10px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .expert__card-paragraph {
+    width: 175px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .expert__text-block {
+    margin-left: 22px;
+    width: 191px;
+    height: 96px;
+    margin-top: 3px;
+    align-items: flex-start;
+  }
+
+
+  .expert__card-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .expert__subtitle-container {
+    margin-top: 20px;
+    width: 78px;
+    height: 40px;
+    border-radius: 16px;
+    padding-top: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .expert__text-block_position {
+    margin-left: 56px;
+  }
+
+  .expert__cards {
+    gap: 0;
+  }
+
+  .expert__image_position {
+    margin-top: 0;
+    width: 95px;
+    height: 95px;
+  }
+
+  .expert__cards {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    gap: 29px;
+    margin: 0;
+  }
+
+  .expert__card-image {
+    position: relative;
+  }
 }
