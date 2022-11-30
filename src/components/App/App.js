@@ -11,6 +11,8 @@ import VacancyReview from '../Vacancy/VacancyReview';
 import Banner from '../Banner/Banner';
 import FeedBack from '../FeedBack/FeedBack';
 import Footer from '../Footer/Footer';
+import Roli from '../Roli';
+import Forma from '../Forma';
 
 function App() {
 
@@ -54,6 +56,7 @@ function App() {
       <Promo />
       <Expert />
       <Quiz executeScroll={executeScroll} />
+      <Roli />
       <Profi />
       <Banner />
       <Route path='/mentor'>
@@ -63,6 +66,7 @@ function App() {
         <VacancyReview vacancyRef={vacancyRef} countCards={countCards} />
       </Route>
       <FeedBack />
+      <Forma />
       <Footer />
     </div>
   );

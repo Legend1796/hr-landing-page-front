@@ -1,0 +1,103 @@
+.formaSauvka{
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 120px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    background: #387CF1;
+}
+.formaSauvka__forma{
+    width: 54.86%;
+    margin: 80px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 47.35%);
+    grid-template-rows: 168px 24px 32px 24px 32px 116px 36px 50px;
+    grid-template-areas:
+        "title title"
+        "label1 label2"
+        "inputs1 inputs2"
+        "label3 label4"
+        "profi inputs3"
+        "stek stek"
+        "checkbox checkbox"
+        "button button";
+    background: #FFFFFF;
+    column-gap: 31px;
+    border-radius: 32px 32px 0px 0px;
+    box-sizing: border-box;
+    padding-left: 102px;
+    padding-right: 102px;
+}
+.formaSauvka__title{
+    margin: 40px auto 40px auto;
+    grid-area: title;
+    font-family: 'YS Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+}
+.formaSauvka__text-label_1{
+    grid-area: label1;
+}
+.formaSauvka__text-label_2{
+    grid-area: label2;
+}
+.formaSauvka__text-label_3{
+    grid-area: label3;
+}
+.formaSauvka__text-label_4{
+    grid-area: label4;
+}
+.formaSauvka__inputs_1{
+    grid-area: inputs1;
+}
+.formaSauvka__inputs_2{
+    grid-area: inputs2;
+}
+.formaSauvka__inputs_3{
+    grid-area: inputs3;
+}
+.formaSauvka__profi{
+    grid-area: profi;
+    font-family: 'YS Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #D6D6D6;
+}
+.formaSauvka__inputs_stek{
+    grid-area: stek;
+    width: 573px;
+    height: 116px;
+    border: 2px solid #A9A9AD;
+    border-radius: 16px;
+}
+.formaSauvka__checkbox{
+    grid-area: checkbox;
+}
+.formaSauvka__submit-button{
+    grid-area: button;
+}
+.formaSauvka__text-label{
+    display: block;
+    font-family: 'YS Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #D6D6D6;
+    mix-blend-mode: normal;
+    text-align: start;
+}  
+.formaSauvka__inputs::placeholder{
+    font-family: 'YS Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #D6D6D6;
+}
