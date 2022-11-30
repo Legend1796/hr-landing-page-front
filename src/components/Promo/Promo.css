@@ -61,12 +61,20 @@
   width: 100%;
 }
 
-.promo__line_first {
+.promo__line-first {
   display: flex;
   /* width: 220%; */
   width: 4000px;
   margin-bottom: 30px;
-  animation: slidetext 6s linear infinite;
+  animation: slidetext 10s linear infinite;
+}
+
+.promo__line-first_lowspeed {
+  animation: slidetext 13s linear infinite;
+}
+
+.promo__line-first_highspeed {
+  animation: slidetext 8s linear infinite;
 }
 
 .promo__text {

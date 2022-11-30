@@ -5,7 +5,7 @@ function Promo() {
     <section className='promo'>
       <h1 className='promo__title'>Делись своим опытом</h1>
       <div className='promo__line'>
-        <div className='promo__line_first'>
+        <div className='promo__line-first'>
           <h3 className='promo__paragrapf'>
             <p className='promo__text promo__text_blue'>менеджменте</p>
             <p className='promo__text'>маркетинге</p>
@@ -23,7 +23,7 @@ function Promo() {
             <p className='promo__text promo__text_blue'>программировании</p>
           </h3>
         </div>
-        <div className='promo__line_first'>
+        <div className='promo__line-first promo__line-first_highspeed'>
           <h3 className='promo__paragrapf'>
             <p className='promo__text promo__text_small promo__text_blue'>менеджменте</p>
             <p className='promo__text promo__text_small'>маркетинге</p>
@@ -43,7 +43,7 @@ function Promo() {
             <p className='promo__text promo__text_small'>маркетинге</p>
           </h3>
         </div>
-        <div className='promo__line_first'>
+        <div className='promo__line-first promo__line-first_lowspeed'>
           <h3 className='promo__paragrapf'>
             <p className='promo__text promo__text_smallest'>дизайне</p>
             <p className='promo__text promo__text_smallest promo__text_blue'>менеджменте</p>
