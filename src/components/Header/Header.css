@@ -6,7 +6,9 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  width: 100vw;
+  top: 0;
+  right: 0;
+  left: 0;
   z-index: 5;
   background-color: black;
 }
@@ -35,7 +37,6 @@
 }
 
 .header__send-request {
-  margin-right: 260px;
   border: 1px solid white;
   border-radius: 100px;
   width: 198px;
@@ -47,4 +48,10 @@
   cursor: pointer;
   transition: background-color .2s linear;
   background-color: #1D6BF3;
+}
+
+@media screen and (max-width: 1439px) {
+  .header {
+    padding: 0 60px;
+  }
 }

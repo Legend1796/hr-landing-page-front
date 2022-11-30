@@ -197,19 +197,26 @@ function VacancyReview({ countCards, clickOnVacancie, addMoreCards }) {
 
       </section>
       <section className='vacancy__list'>
-        {resultCards.length === 0
-          ?
-          <p className='vacancy__not-found'>Таких вакансий пока нет 😊
-            Чтобы посмотреть другие, поменяйте роль или направление.</p>
-          :
-          <ul className='vacancy__items'>
-            {resultCards.map((vacancy) => (
-              <Vacancy title={vacancy.title} textPay={vacancy.textPay} textCash={vacancy.textCash} url={vacancy.url} key={vacancy.id} clickOnVacancie={clickOnVacancie} />
-            ))}
-          </ul>
-        }
-        <div className='vacancy__more'>
-          <button className={`vacancy__more-button ${isNeedMoreButton ? 'vacancy__more-button_active' : ''}`} type='button' onClick={addMoreCards}>Ещё</button>
+        <div className='vacancy__container'>
+          {resultCards.length === 0
+            ?
+            <p className='vacancy__not-found'>Таких вакансий пока нет 😊
+              Чтобы посмотреть другие, поменяйте роль или направление.</p>
+            :
+            <>
+              <ul className='vacancy__items'>
+                {resultCards.map((vacancy) => (
+                  <Vacancy title={vacancy.title} textPay={vacancy.textPay} textCash={vacancy.textCash} url={vacancy.url} key={vacancy.id} clickOnVacancie={clickOnVacancie} />
+                ))}
+              </ul>
+              <div>
+
+              </div>
+            </>
+          }
+          <div className='vacancy__more'>
+            <button className={`vacancy__more-button ${isNeedMoreButton ? 'vacancy__more-button_active' : ''}`} type='button' onClick={addMoreCards}>Смотреть еще</button>
+          </div>
         </div>
       </section>
     </>

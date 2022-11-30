@@ -127,6 +127,11 @@
   margin-top: 6px;
 }
 
+.vacancy__container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
 .vacancy__items {
   padding: 0;
   margin: 0;
@@ -172,4 +177,23 @@
 
 .vacancy__more-button_active {
   display: block;
+}
+
+@media screen and (max-width: 1439px) {
+  .vacancy__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vacancy {
+    padding: 0 60px;
+    padding-top: 60px;
+  }
+
+  .vacancy__list {
+    padding: 0 60px;
+  }
+
+  .vacancy__container {
+    width: 790px;
+  }
 }

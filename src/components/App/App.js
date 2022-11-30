@@ -25,6 +25,11 @@ function App() {
 
   window.onresize = newPageSize;
 
+  React.useEffect(() => {
+    countCardsOnPage();
+  }, [pageWidth])
+
+
   function handleActivateButton(num) {
     setBtnId(num);
     if (num === 1) {
