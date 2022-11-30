@@ -57,6 +57,14 @@
   color: white;
 }
 
+.header__navigation-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1439px) {
   .header {
     padding: 0 60px;

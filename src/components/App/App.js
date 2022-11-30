@@ -15,6 +15,7 @@ import * as popupTexts from '../utils/texts';
 import Footer from '../Footer/Footer';
 import Roli from '../Roli/Roli';
 import Forma from '../Forma/Forma';
+import Navigation from '../Navigation/Navigation';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
   const [addCountCards, setAddCountCards] = React.useState(3);
   const [cardTitle, setCardTitle] = React.useState('');
   const [openPopup, setOpenPopup] = React.useState(false);
+  const [openNavigation, setOpenNavigation] = React.useState(false);
   const [btnId, setBtnId] = React.useState(1);
   const [texts, setTexts] = React.useState(popupTexts.texts1);
 
@@ -38,6 +40,9 @@ function App() {
     countCardsOnPage();
   }, [pageWidth])
 
+  function handleOpenNavigation() {
+    setOpenNavigation(true);
+  }
 
   function handleActivateButton(num) {
     setBtnId(num);
@@ -108,8 +113,8 @@ function App() {
       <Route exact path='/'>
         <Redirect to='/mentor/programming' />
       </Route>
-      <Header />
-      <Promo />
+      <Header pageWidth={pageWidth} openNavigation={handleOpenNavigation} />
+      <Promo pageWidth={pageWidth} />
       <Expert />
       <Quiz executeScroll={executeScroll} />
       <Roli />
@@ -125,6 +130,7 @@ function App() {
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
       <Forma />
       <Footer />
+      <Navigation onClose={handleCloseAllPopups} isOpen={openNavigation} />
     </div>
   );
 }

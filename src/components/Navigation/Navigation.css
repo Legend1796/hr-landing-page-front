@@ -1,0 +1,26 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 375px;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.navigation_opened {
+  visibility: visible;
+}
+
+.navigation__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  text-decoration: none;
+}
