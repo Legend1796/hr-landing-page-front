@@ -31,28 +31,24 @@ function FeedBack() {
 
   return (
     <section className='feedback'>
-      <h3 className='feedback__title'>Отзывы</h3>
-      <div className='feedback__container-slider'>
-        {dataSlider.map((obj, index) => {
-          return (
-            <div key={obj.id} className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
-              <img src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`} alt='Видео' />
+      <div className='feedback__container'>
+        <h3 className='feedback__title'>Отзывы</h3>
+        <div className='feedback__container-slider'>
+          {dataSlider.map((obj, index) => {
+            return (
+              <div key={obj.id} className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
+                <img className='feedback__image' src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`} alt='Видео' />
+              </div>
+            )
+          })}
+          <div className='feedback__container-buttons'>
+            <h3 className='feedback__subtitle'>«Всё моё наставничество — это челлендж»</h3>
+            <div className='feedback__buttons'>
+              <BtnFeedback moveSlide={prevSlide} direction={'prev'} />
+              <BtnFeedback moveSlide={nextSlide} direction={'next'} />
             </div>
-          )
-        })}
-        <div className='feedback__container-buttons'>
-          <h3 className='feedback__subtitle'>«Всё моё наставничество — это челлендж»</h3>
-          <div className='feedback__buttons'>
-            <BtnFeedback moveSlide={prevSlide} direction={'prev'} />
-            <BtnFeedback moveSlide={nextSlide} direction={'next'} />
           </div>
-        </div>
-        <img className='feedback__play-video' src={playFeedback} alt='play' />
-        <div className='container-dots'>
-          {Array.from({ length: 5 }).map((item, index) => (
-            <div
-              onClick={() => moveDot(index + 1)} className={slideIndex === index + 1 ? 'dot active' : 'dot'} key={index} ></div>
-          ))}
+          <img className='feedback__play-video' src={playFeedback} alt='play' />
         </div>
       </div>
     </section >

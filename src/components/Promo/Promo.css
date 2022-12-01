@@ -1,9 +1,9 @@
 .promo {
   margin: 0;
   padding: 0 120px;
-  border-bottom: 1px solid #1A1B22;
   position: relative;
   overflow: hidden;
+  box-shadow: 2px 2px 15px rgba(16, 40, 84, 0.1);
 }
 
 .promo__title {
@@ -23,7 +23,7 @@
 
 .promo__buttom {
   width: 268px;
-  height: 50px;
+  height: 60px;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -41,13 +41,15 @@
   background-color: #1D6BF3;
 }
 
+.promo__text_blue {
+  color: #1D6BF3;
+}
+
 .promo__paragrapf {
   padding: 0;
   margin: 0;
   font-weight: 400;
   overflow: hidden;
-  font-size: 56px;
-  line-height: 60px;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -59,30 +61,44 @@
   width: 100%;
 }
 
-.promo__line_first {
+.promo__line-first {
   display: flex;
-  /* width: 220%; */
-  width: 3200px;
+  width: 4200px;
   margin-bottom: 30px;
-  animation: slidetext 6s linear infinite;
+  animation: slidetext 46s linear infinite;
+}
+
+.promo__line-first_lowspeed {
+  animation: slidetext 50s linear infinite;
+}
+
+.promo__line-first_highspeed {
+  animation: slidetextback 33s linear infinite;
 }
 
 .promo__text {
   margin: 0;
   padding: 0;
+  font-size: 56px;
+  line-height: 60px;
+  scale: 1;
 }
 
-/* .promo__line_second {
-  top: 426px;
-  left: -162px;
-  animation: 4s slidein alternate ease-in-out infinite;
+.promo__text:hover {
+  cursor: pointer;
+  transition: scale .2s linear;
+  scale: 1.1;
 }
 
-.promo__line_third {
-  top: 506px;
-  left: -62px;
-  animation: 5s slidein alternate ease-in-out infinite;
-} */
+.promo__text_small {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+.promo__text_smallest {
+  font-size: 28px;
+  line-height: 36px;
+}
 
 @keyframes slidetext {
   0% {
@@ -91,5 +107,66 @@
 
   100% {
     transform: translateX(-53%);
+  }
+}
+
+@keyframes slidetextback {
+  0% {
+    transform: translateX(-53%);
+  }
+
+  100% {
+    transform: translateX(-3%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo__title {
+    margin: 108px auto 32px;
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .promo {
+    padding: 0;
+  }
+
+  .promo__buttom {
+    width: 343px;
+    height: 60px;
+  }
+
+  .promo__bottom-сontainer {
+    align-items: center;
+    margin: 60px auto 56px;
+  }
+
+  .promo__text {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .promo__text_small {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .promo__text_smallest {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .promo__line-first {
+    margin-bottom: 20px;
+    width: 2800px;
+    animation: slidetext 46s linear infinite;
+  }
+
+  .promo__line-first_lowspeed {
+    animation: slidetext 50s linear infinite;
+  }
+
+  .promo__line-first_highspeed {
+    animation: slidetextback 38s linear infinite;
   }
 }

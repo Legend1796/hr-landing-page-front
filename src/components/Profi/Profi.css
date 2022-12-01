@@ -15,12 +15,13 @@
 }
 
 .profi__container {
+
   display: grid;
   grid-template-columns: repeat(3, 31.7%);
   column-gap: 30px;
   grid-template-rows: repeat(2, 48.2%);
   row-gap: 28px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 .profi__card {
@@ -114,28 +115,68 @@
   margin-bottom: 32px;
   margin-left: 24px;
   width: 332px;
-
 }
 
 .profi__text-back_bottom {
   margin: 0;
 }
 
+.profi__block {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.profi__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profi__link_mobile {
+  width: 131px;
+  height: 50px;
+  border-radius: 100px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+.profi__link-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: white;
+}
 
 @media screen and (max-width: 1439px) {
   .profi {
-    padding: 60px;
+    padding: 120px 60px;
   }
 
   .profi__container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+
+  .profi__block {
+    width: 790px;
+  }
 }
 
 @media screen and (max-width: 930px) {
   .profi {
-    padding: 60px;
+    padding: 100px 16px;
+  }
+
+  .profi__text-back {
+    width: 266px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 8px auto 0;
+  }
+
+  .profi__text-back:first-child {
+    margin: 20px auto 0;
   }
 
   .profi__title {
@@ -149,13 +190,18 @@
   .profi__container {
     display: flex;
     flex-direction: column;
-    /* grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr); */
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    width: 306px;
   }
 
   .profi__front {
+    width: 306px;
+    height: 330px;
+  }
+
+  .profi__back {
     width: 306px;
     height: 330px;
   }
@@ -182,4 +228,19 @@
     margin-top: 8px;
   }
 
+  .profi__block {
+    width: 321px;
+  }
+
+  .profi__back-bottom {
+    width: 266px;
+  }
+
+  .profi__text-back_bottom {
+    width: 126px;
+  }
+
+  .profi__card:hover .flip {
+    transform: rotateY(0);
+  }
 }
