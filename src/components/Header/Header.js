@@ -12,7 +12,7 @@ function Header({ openNavigation, pageWidth }) {
           <div className='header__links'>
             <a className='header__link' href='#quiz'><p className='header__link-text'>Наставник или ревьер</p></a>
             <a className='header__link' href='#profi'><p className='header__link-text'>Направления</p></a>
-            <a className='header__link' href='#vacancy'><p className='header__link-text'>Роли</p></a>
+            <a className='header__link' href='#vacancy'><p className='header__link-text'>Вакансии</p></a>
           </div>
           <button className='header__send-request' type='button'>
             <a className='header__link' href='#send'><p className='header__link-text'>Оставить заявку</p></a>

@@ -3,7 +3,7 @@ import { Link, Route } from 'react-router-dom';
 import { vacancies } from '../utils/vacancies';
 import Vacancy from './Vacancy';
 
-function VacancyReview({ countCards, vacancyRef, clickOnVacancie, addMoreCards }) {
+function VacancyReview({ pageWidth, countCards, vacancyRef, clickOnVacancie, addMoreCards }) {
 
   const [cards, setCards] = React.useState(vacancies);
   const [specs, setSpecs] = React.useState('programming');
@@ -12,32 +12,47 @@ function VacancyReview({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
   const vacancyTable = document.getElementById('vacancy__table');
 
   React.useEffect(() => {
+    vacancyTable.style = 'margin-left: 0';
+  }, [pageWidth])
+
+  React.useEffect(() => {
     filterCards(specs, cards);
   }, [specs, countCards])
 
   function setProgramming() {
     setSpecs('programming');
-    vacancyTable.style = 'margin-left: 0';
+    if (pageWidth < 930) {
+      vacancyTable.style = 'margin-left: 0';
+    }
   }
 
   function setAnalitics() {
     setSpecs('analitics');
-    vacancyTable.style = 'margin-left: -100px';
+    if (pageWidth < 930) {
+      console.log(pageWidth);
+      vacancyTable.style = 'margin-left: -100px';
+    }
   }
 
   function setDesigh() {
     setSpecs('design');
-    vacancyTable.style = 'margin-left: -200px';
+    if (pageWidth < 930) {
+      vacancyTable.style = 'margin-left: -200px';
+    }
   }
 
   function setMarketing() {
     setSpecs('marketing');
-    vacancyTable.style = 'margin-left: -300px';
+    if (pageWidth < 930) {
+      vacancyTable.style = 'margin-left: -300px';
+    }
   }
 
   function setMenegement() {
     setSpecs('menegement');
-    vacancyTable.style = 'margin-left: -400px';
+    if (pageWidth < 930) {
+      vacancyTable.style = 'margin-left: -400px';
+    }
   }
 
   function filterCards(specs, cards) {
@@ -50,7 +65,7 @@ function VacancyReview({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
 
   return (
     <>
-      <section className='vacancy' ref={vacancyRef}>
+      <section className='vacancy' ref={vacancyRef} id='vacancy'>
         <div className='vacancy__filter'>
           <h1 className='vacancy__title'>Кого мы ищем</h1>
           <div className='vacancy__links'>
