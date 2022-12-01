@@ -64,8 +64,8 @@ function Popup({ isOpen, onClose, title, btnId, activateButton, texts }) {
           </div>
         </div>
         <div className='popup__background-container'>
-          <a className='popup__background-link' href='https://forms.yandex.ru/surveys/10024289.145b1c5aada4364b8ed325d02f75a35fe8f8ee1c/' target='_blank' rel='noopener noreferrer'><p className='popup__button-name'>Откликнуться на вакансию</p></a>
-          <a className='popup__link' href='https://t.me/practicum_experts' target='_blank' rel='noopener noreferrer'><img src={popupLink} className='popup__link-image' alt='ссылка на соцсети' /> </a>
+          <a className='popup__link' href='https://t.me/practicum_experts' target='_blank' rel='noopener noreferrer'><img src={popupLink} className='popup__link-image' alt='ссылка на соцсети' /><p className='popup__button-name popup__button-name_color_white'>Поделиться</p></a>
+          <a className='popup__background-link' href='https://forms.yandex.ru/surveys/10024289.145b1c5aada4364b8ed325d02f75a35fe8f8ee1c/' target='_blank' rel='noopener noreferrer'><p className='popup__button-name'>Откликнуться на предложение</p></a>
         </div>
       </div>
 

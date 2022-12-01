@@ -41,7 +41,7 @@ function App() {
   }, [pageWidth])
 
   function handleOpenNavigation() {
-    setOpenNavigation(true);
+    setOpenNavigation(!openNavigation);
   }
 
   function handleActivateButton(num) {
@@ -130,7 +130,7 @@ function App() {
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
       <Forma />
       <Footer />
-      <Navigation onClose={handleCloseAllPopups} isOpen={openNavigation} />
+      <Navigation isOpen={openNavigation} />
     </div>
   );
 }
