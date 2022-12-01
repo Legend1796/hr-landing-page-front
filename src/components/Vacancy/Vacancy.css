@@ -269,4 +269,9 @@
   .vacancy__more-button {
     width: 342px;
   }
+
+  .vacancy__table {
+    margin-left: 1px;
+  }
+
 }
