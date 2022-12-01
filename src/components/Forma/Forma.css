@@ -23,6 +23,7 @@
 .formaSauvka__form-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .formaSauvka__title {
@@ -32,12 +33,17 @@
     margin: 0 0 40px;
     max-width: 584px;
     text-align: center;
+    padding-top: 20px;
 }
 
 .formaSauvka__field {
     position: relative;
-    margin: 0 31px 52px 0;
+    margin: 0 0 52px 0;
     width: 277px;
+}
+
+.formaSauvka__field:nth-child(odd) {
+    margin-right: 31px;
 }
 
 .formaSauvka__inputs {
@@ -50,6 +56,10 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0;
     position: relative;
+}
+
+.formaSauvka__inputs::placeholder {
+    color: #D6D6D6;
 }
 
 .formaSauvka__text-error {
@@ -72,8 +82,58 @@
     border-radius: 16px;
     width: 573px;
     height: 116px;
+    padding: 16px;
+    margin-bottom: 24px;
 }
 
 .formaSauvka__checkbox {
-    justify-self: flex-start;
+    text-align: left;
+    margin-bottom: 32px;
 }
+
+.formaSauvka__checkbox-item {
+    margin: 0 8px 0 0;
+}
+
+.formaSauvka__direction-button {
+    font-size: 18px;
+    line-height: 28px;
+    box-sizing: border-box;
+    width: 277px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0;
+    position: relative;
+    text-align: left;
+    background-color: #FFFFFF;
+    color: #D6D6D6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formaSauvka__submit-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    width: 210px;
+    height: 60px;
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+  }
+  
+  .formaSauvka__submit-button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  .star {
+    color: #387CF1;
+    margin: 0 8px 0 0;
+  }
