@@ -1,15 +1,15 @@
 import socialVk from '../../images/social-vk.svg';
 import socialTg from '../../images/social-tg-header.svg';
 
-function Navigation({ isOpen }) {
+function Navigation({ isOpen, onClose }) {
 
   return (
     <div className={`navigation ${isOpen ? 'navigation_opened' : ''}`} >
       <div className='navigation__container'>
         <div className='navigation__links'>
-          <a className='navigation__link' href='#quiz'><p className='navigation__link-text'>Наставник или ревьер</p></a>
-          <a className='navigation__link' href='#profi'><p className='navigation__link-text'>Направления</p></a>
-          <a className='navigation__link' href='#vacancy'><p className='navigation__link-text'>Предложения</p></a>
+          <a className='navigation__link' onClick={onClose} href='#quiz'><p className='navigation__link-text'>Наставник или ревьер</p></a>
+          <a className='navigation__link' onClick={onClose} href='#profi'><p className='navigation__link-text'>Направления</p></a>
+          <a className='navigation__link' onClick={onClose} href='#vacancy'><p className='navigation__link-text'>Предложения</p></a>
         </div>
         <div className='navigation__intouch'>
           <div className='navigation__call'>

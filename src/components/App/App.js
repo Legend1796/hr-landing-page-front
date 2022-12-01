@@ -68,6 +68,7 @@ function App() {
 
   function handleCloseAllPopups() {
     setOpenPopup(false);
+    setOpenNavigation(false);
   }
 
   function countCardsOnPage() {
@@ -130,7 +131,7 @@ function App() {
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
       <Forma />
       <Footer />
-      <Navigation isOpen={openNavigation} />
+      <Navigation isOpen={openNavigation} onClose={handleCloseAllPopups} />
     </div>
   );
 }
