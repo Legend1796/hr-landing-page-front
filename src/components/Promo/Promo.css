@@ -76,7 +76,12 @@
   animation: slidetextback 33s linear infinite;
 }
 
+.promo__text_black {
+  color: black;
+}
+
 .promo__text {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   font-size: 56px;

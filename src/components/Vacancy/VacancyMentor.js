@@ -59,7 +59,7 @@ function VacancyMentor({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
             <Link className='vacancy__link vacancy__link-active' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>
             <Link className='vacancy__link' to='/review/programming'><p className='vacancy__link-text'>Ревьюеров</p></Link>
           </div>
-          <div className='vacancy__table' id='vacancy__table'>
+          <div className='vacancy__table vacancy__table_mobile' id='vacancy__table'>
             <Route path='/mentor/programming'>
               <Link className='vacancy__choise vacancy__choise-active' to='/mentor/programming'>
                 <button type='button' onClick={setProgramming} className='vacancy__button'>
