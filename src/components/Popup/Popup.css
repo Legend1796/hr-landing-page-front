@@ -189,6 +189,10 @@
   content: '\25CF';
 }
 
+.popup__move-buttons {
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (max-width: 1080px) {
   .popup__container {
@@ -220,6 +224,7 @@
   .popup__button-name {
     font-size: 16px;
     line-height: 20px;
+    min-width: 92px;
   }
 
   .popup__text {
@@ -232,22 +237,30 @@
   }
 
   .popup__buttons {
-    flex-direction: row;
     overflow: hidden;
-    width: 330px;
-    align-items: center;
+    width: 360px;
     padding-left: 8px;
     padding-top: 30px;
     padding-bottom: 8px;
+    position: relative;
+    height: 100px;
+  }
+
+
+  .popup__move-buttons {
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+    width: 1400px;
   }
 
   .popup__button {
     margin: 0;
-    padding: 12px 20px;
-    /* min-width: 132px; */
-    max-width: 309px;
-    height: 44px;
+    padding: 0;
+    max-width: 240px;
+    max-height: 94px;
     margin-left: 16px;
+    padding: 12px 20px;
   }
 
   .popup__button:first-child {
