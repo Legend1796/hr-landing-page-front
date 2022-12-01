@@ -156,9 +156,9 @@
 
 .quiz__result-title {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 44px;
-  margin: 0 0 50px;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0 0 40px;
 }
 
 .quiz__result-buttons {
@@ -251,8 +251,13 @@
 
 @media screen and (max-width: 768px) {
   .quiz {
-    width: 375px;
+    max-width: 768px;
     height: fit-content;
+  }
+
+  .quiz__circle {
+    height: 48px;
+    width: 48px;
   }
 
   .quiz__presection {
@@ -264,8 +269,14 @@
     height: 6px;
   }
 
+  .quiz__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+
   .quiz__container {
-    max-width: 375px;
+    max-width: 768px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,6 +289,27 @@
   .quiz__job-title {
     font-size: 18px;
     line-height: 24px;
-    width: 77px;
+    font-weight: 700;
+    width: 92px;
+  }
+
+  .quiz__job-title_mentor {
+    bottom: 40px;
+    left: 140px;
+  }
+
+  .quiz__job-title_review {
+    bottom: 40px;
+    right: 140px;
+  }
+
+  .quiz__slider-and-jobs {
+    margin: 43px 0 70px;
+  }
+
+  .quiz__counter {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 8px;
   }
 }
