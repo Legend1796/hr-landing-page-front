@@ -260,7 +260,20 @@
   }
 
   .popup__background-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .popup__link {
+    width: 343px;
+    height: 50px;
+    margin: 16px auto 32px;
+  }
+
+  .popup__background-link {
+    width: 343px;
+    height: 50px;
+    margin: 20px auto 0;
   }
 }
