@@ -41,7 +41,6 @@ function VacancyReview({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
 
   function filterCards(specs, cards) {
     var vacanciesOnFilter = (cards.filter((i) => i.role === 'mentor').filter((i) => i.specs === specs));
-    console.log(vacanciesOnFilter);
     if (vacanciesOnFilter.length > countCards) {
       setNeedMoreButton(true);
     } else { setNeedMoreButton(false) }

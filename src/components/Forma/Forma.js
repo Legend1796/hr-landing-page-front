@@ -8,9 +8,13 @@ import ReactDOM from 'react-dom';
 
 const Forma = () => {
 
+    const [nameInputValue, setNameInputValue] = React.useState('');
+    const [telegramInputValue, setTelegramInputValue] = React.useState('');
+    const [portfolioInputValue, setPortfolioInputValue] = React.useState('');
+
     const [buttonTitle, setButtonTitle] = React.useState('Направление')
     const [selectorImage, setSelectorImage] = React.useState(<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.5 1.71094L5.5 5.71094L9.5 1.71094" stroke="#1D6BF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M1.5 1.71094L5.5 5.71094L9.5 1.71094" stroke="#1D6BF3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>)
 
     const menu = (
@@ -29,6 +33,18 @@ const Forma = () => {
 
     function onSelect({ key }) {
         setButtonTitle(key);
+    }
+
+    function handleNameInputChange(e) {
+        setNameInputValue(e.target.value)
+    }
+
+    function handleTelegramInputChange(e) {
+        setTelegramInputValue(e.target.value)
+    }
+
+    function handlePortfolioInputChange(e) {
+        setPortfolioInputValue(e.target.value)
     }
 
     function onVisibleChange(visible) {
@@ -61,8 +77,8 @@ const Forma = () => {
                 <h2 className="formaSauvka__title">Оставьте заявку и мы свяжемся с вами</h2>
                 <form className="formaSauvka__forma" onSubmit={handleSubmit(onSubmit)}>
                     <div className='formaSauvka__form-container'>
-                        <div className='formaSauvka__field'>
-                            <input className="formaSauvka__inputs formaSauvka__inputs_1"
+                        <div onChange={handleNameInputChange} className='formaSauvka__field'>
+                            <input value={nameInputValue} className={`${errors.name ? "formaSauvka__inputs_error" : ''} formaSauvka__inputs formaSauvka__inputs_1 ${(!errors.name && nameInputValue != '') ? 'formaSauvka__inputs_typed' : ''}`}
                                 {...register("name", {
                                     minLength: {
                                         value: 2,
@@ -83,8 +99,8 @@ const Forma = () => {
                             />
                             <span className={`formaSauvka__text-error ${errors.name ? 'formaSauvka__text-error_visible' : ''}`}>{errors.name ? errors.name.message : ''}</span>
                         </div>
-                        <div className="formaSauvka__field">
-                            <input className="formaSauvka__inputs formaSauvka__inputs_2"
+                        <div onChange={handleTelegramInputChange} className="formaSauvka__field">
+                            <input value={telegramInputValue} className={`${errors.telegram ? "formaSauvka__inputs_error" : ''} formaSauvka__inputs formaSauvka__inputs_2 ${(!errors.telegram && telegramInputValue != '') ? 'formaSauvka__inputs_typed' : ''}`}
                                 {...register('telegram', {
                                     pattern: {
                                         value: /@([A-Za-z0-9_]{1,15})/,
@@ -115,8 +131,8 @@ const Forma = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='formaSauvka__field'>
-                            <input className="formaSauvka__inputs formaSauvka__inputs_3"
+                        <div onChange={handlePortfolioInputChange} className='formaSauvka__field'>
+                            <input className={`${errors.portfolio ? "formaSauvka__inputs_error" : ''} formaSauvka__inputs formaSauvka__inputs_3 ${(!errors.portfolio && portfolioInputValue != '') ? 'formaSauvka__inputs_typed' : ''}`}
                                 {...register('portfolio', {
                                     pattern: {
                                         value: /[-a-zA-Z0-9@:%_\+.~#?&\/=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&\/=]*)?/gi,

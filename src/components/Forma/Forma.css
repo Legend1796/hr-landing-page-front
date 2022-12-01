@@ -56,7 +56,12 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0;
     position: relative;
+    outline: none;
 }
+
+.formaSauvka__inputs_typed {
+    border-color: green;
+  }
 
 .formaSauvka__inputs::placeholder {
     color: #D6D6D6;
@@ -84,6 +89,24 @@
     height: 116px;
     padding: 16px;
     margin-bottom: 24px;
+    resize: none;
+    outline: none;
+}
+
+.formaSauvka__inputs_error {
+    border-bottom: 1px solid #FF3B30;
+}
+
+.formaSauvka__inputs:focus {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.formaSauvka__inputs_stek::placeholder {
+    color: #D6D6D6;
+}
+
+.formaSauvka__inputs_stek:focus {
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .formaSauvka__checkbox {
