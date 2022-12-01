@@ -123,9 +123,9 @@
 }
 
 .popup__button:hover {
-  transition: opacity .2s linear;
+  transition: background-color .2s linear;
   cursor: pointer;
-  opacity: .6;
+  background-color: #215EC6;
 }
 
 .popup__button-name {
@@ -204,7 +204,7 @@
   .popup__title {
     margin: 0;
     width: 311px;
-    margin-left: 8px;
+    margin-left: 16px;
     font-size: 20px;
     line-height: 24px;
   }
