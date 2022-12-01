@@ -636,38 +636,42 @@ function Quiz({ executeScroll }) {
 
 
   return (
-    <section className={`quiz ${isActive ? 'quiz_result-active' : ''}`} id='quiz' >
-      <div className='quiz__container'>
-        <h2 className="quiz__title">Кто ты?</h2>
-        <div className="quiz__slider-and-jobs">
-          <p className="quiz__job-title">Наставник</p>
-          <div className="quiz__slider-container">
-            <div className="quiz__line">
-              <div className="quiz__circle" style={circleStates[circlePosition.current]}>
-                {quizImage}
+    <>
+      <div className='quiz__presection' id='quiz'>
+      </div>
+      <section className={`quiz ${isActive ? 'quiz_result-active' : ''}`}  >
+        <div className='quiz__container'>
+          <h2 className="quiz__title">Кто ты?</h2>
+          <div className="quiz__slider-and-jobs">
+            <p className="quiz__job-title quiz__job-title_mentor">Наставник</p>
+            <div className="quiz__slider-container">
+              <div className="quiz__line">
+                <div className="quiz__circle" style={circleStates[circlePosition.current]}>
+                  {quizImage}
+                </div>
               </div>
             </div>
+            <p className="quiz__job-title quiz__job-title_review">Ревьюер</p>
           </div>
-          <p className="quiz__job-title">Ревьюер</p>
-        </div>
-        <div className="quiz__text-and-buttons">
-          <p className="quiz__counter">{quizCounter.current}/8</p>
-          <p className="quiz__text">Я хочу {quizText}</p>
-          <div className="quiz__buttons">
-            <button type="button" onClick={handleWantClick} className="quiz__button">Хочу</button>
-            <button className="quiz__button" onClick={handleDontWantClick}>Не моё</button>
+          <div className="quiz__text-and-buttons">
+            <p className="quiz__counter">{quizCounter.current}/8</p>
+            <p className="quiz__text">Я хочу {quizText}</p>
+            <div className="quiz__buttons">
+              <button type="button" onClick={handleWantClick} className="quiz__button">Хочу</button>
+              <button className="quiz__button" onClick={handleDontWantClick}>Не моё</button>
+            </div>
+          </div>
+          <div className={`quiz__result ${isActive ? 'quiz__result_opened' : ''}`}>
+            {resultImage}
+            <p className="quiz__result-title">{resultTitle}</p>
+            <div className="quiz__result-buttons">
+              <Link to={resultLink}><button type="button" onClick={executeScroll} className="quiz__result-button">Смотреть предложения</button></Link>
+              <button type="button" onClick={handleRestartClick} className="quiz__result-button quiz__result-button_white">Пройти заново</button>
+            </div>
           </div>
         </div>
-        <div className={`quiz__result ${isActive ? 'quiz__result_opened' : ''}`}>
-          {resultImage}
-          <p className="quiz__result-title">{resultTitle}</p>
-          <div className="quiz__result-buttons">
-            <Link to={resultLink}><button type="button" onClick={executeScroll} className="quiz__result-button">Смотреть предложения</button></Link>
-            <button type="button" onClick={handleRestartClick} className="quiz__result-button quiz__result-button_white">Пройти заново</button>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
