@@ -59,7 +59,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Наставник на курс «Android‑разработчик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-83',
   },
   {
@@ -69,7 +69,7 @@ export const vacancies = [
     title: 'Наставник на курс «iOS‑разработчик»',
     textPay: 'Оплата за ведение группы',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-84',
   },
   {
@@ -115,7 +115,7 @@ export const vacancies = [
     specs: 'analitics',
     title: 'Наставник на курс «Аналитик данных»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-5',
   },
   {
@@ -124,7 +124,7 @@ export const vacancies = [
     specs: 'analitics',
     title: 'Наставник на курс «Специалист по Data Science»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-6',
   },
   {
@@ -133,7 +133,7 @@ export const vacancies = [
     specs: 'analitics',
     title: 'Наставник на курс «Системный аналитик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-90',
   },
   {
@@ -142,7 +142,7 @@ export const vacancies = [
     specs: 'analitics',
     title: 'Наставник на курс «Инженер данных»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-77',
   },
 
@@ -152,7 +152,7 @@ export const vacancies = [
     specs: 'analitics',
     title: 'Наставник на курс «Инженер данных»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-77',
   },
   {
@@ -161,7 +161,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс React-разработчик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-63',
   },
   {
@@ -170,7 +170,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «Веб-разработчик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-77',
   },
   {
@@ -179,7 +179,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «Python-разработчик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-20',
   },
   {
@@ -188,7 +188,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «Java-разработчик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-73',
   },
   {
@@ -197,7 +197,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «iOS-разработчик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-85',
   },
   {
@@ -206,7 +206,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «Мидл Python-разработчик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-40',
   },
   {
@@ -215,7 +215,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «Инженер по тестированию»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-36',
   },
   {
@@ -224,7 +224,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «Android-разработчик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-89',
   },
   {
@@ -233,7 +233,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер по Go на курс «Алгоритмы для разработчиков»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-34',
   },
   {
@@ -242,7 +242,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер по Python на курс «Алгоритмы для разработчиков»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-32',
   },
   {
@@ -251,7 +251,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер по Java на курс «Алгоритмы для разработчиков»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-33',
   },
   {
@@ -260,7 +260,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «Асинхронно программирование на Python»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-95',
   },
   {
@@ -269,7 +269,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «Разработчик на С++»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-43',
   },
   {
@@ -278,7 +278,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер на курс «Автоматизатор тестирования на Java»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-75',
   },
   {
@@ -287,7 +287,7 @@ export const vacancies = [
     specs: 'programming',
     title: 'Ревьюер по С++ на курс «Алгоритмы для разработчиков»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-35',
   },
   {
@@ -296,7 +296,7 @@ export const vacancies = [
     specs: 'analitics',
     title: 'Ревьюер на курс «Системный аналитик»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-93',
   },
   {
@@ -305,7 +305,7 @@ export const vacancies = [
     specs: 'analitics',
     title: 'Ревьюер на курс «Инженер данных»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-82',
   },
   {
@@ -314,7 +314,7 @@ export const vacancies = [
     specs: 'analitics',
     title: 'Ревьюер на курс «Аналитик данных»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-37',
   },
   {
@@ -323,7 +323,7 @@ export const vacancies = [
     specs: 'analitics',
     title: 'Ревьюер на курс «Специалист по Data Science»',
     textPay: 'Оплата за ведение группы',
-    textCash: 'В среднем 45 000 ₽ в месяц (уточнить)',
+    textCash: 'В среднем 45 000 ₽ в месяц',
     url: 'https://practicum.yandex.ru/job/vacancy-38',
   },
 ];

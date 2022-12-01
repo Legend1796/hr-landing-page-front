@@ -9,6 +9,7 @@ function VacancyReview({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
   const [specs, setSpecs] = React.useState('programming');
   const [resultCards, setResultCards] = React.useState([]);
   const [isNeedMoreButton, setNeedMoreButton] = React.useState(false);
+  const vacancyTable = document.getElementById('vacancy__table');
 
   React.useEffect(() => {
     filterCards(specs, cards);
@@ -16,27 +17,27 @@ function VacancyReview({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
 
   function setProgramming() {
     setSpecs('programming');
-    filterCards(specs, cards);
+    vacancyTable.style = 'margin-left: 0';
   }
 
   function setAnalitics() {
     setSpecs('analitics');
-    filterCards(specs, cards);
+    vacancyTable.style = 'margin-left: -100px';
   }
 
   function setDesigh() {
     setSpecs('design');
-    filterCards(specs, cards);
+    vacancyTable.style = 'margin-left: -200px';
   }
 
   function setMarketing() {
     setSpecs('marketing');
-    filterCards(specs, cards);
+    vacancyTable.style = 'margin-left: -300px';
   }
 
   function setMenegement() {
     setSpecs('menegement');
-    filterCards(specs, cards);
+    vacancyTable.style = 'margin-left: -400px';
   }
 
   function filterCards(specs, cards) {
@@ -56,7 +57,7 @@ function VacancyReview({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
             <Link className='vacancy__link' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>
             <Link className='vacancy__link vacancy__link-active' to='/review/programming'><p className='vacancy__link-text'>Ревьюеров</p></Link>
           </div>
-          <div className='vacancy__table'>
+          <div className='vacancy__table' id='vacancy__table'>
             <Route path='/review/programming'>
               <Link className='vacancy__choise vacancy__choise-active' to='/review/programming'>
                 <button type='button' onClick={setProgramming} className='vacancy__button'>
@@ -200,8 +201,7 @@ function VacancyReview({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
         <div className='vacancy__container'>
           {resultCards.length === 0
             ?
-            <p className='vacancy__not-found'>Таких вакансий пока нет 😊
-              Чтобы посмотреть другие, поменяйте роль или направление.</p>
+            <p className='vacancy__not-found'>Таких вакансий пока нет. <br />Чтобы посмотреть другие, поменяйте роль или направление.</p>
             :
             <>
               <ul className='vacancy__items'>

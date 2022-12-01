@@ -10,6 +10,7 @@ function VacancyMentor({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
   const [specs, setSpecs] = React.useState('programming');
   const [resultCards, setResultCards] = React.useState([]);
   const [isNeedMoreButton, setNeedMoreButton] = React.useState(false);
+  const vacancyTable = document.getElementById('vacancy__table');
 
   React.useEffect(() => {
     filterCards(specs, cards);
@@ -17,22 +18,27 @@ function VacancyMentor({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
 
   function setProgramming() {
     setSpecs('programming');
+    vacancyTable.style = 'margin-left: 0';
   }
 
   function setAnalitics() {
     setSpecs('analitics');
+    vacancyTable.style = 'margin-left: -100px';
   }
 
   function setDesigh() {
     setSpecs('design');
+    vacancyTable.style = 'margin-left: -200px';
   }
 
   function setMarketing() {
     setSpecs('marketing');
+    vacancyTable.style = 'margin-left: -300px';
   }
 
   function setMenegement() {
     setSpecs('menegement');
+    vacancyTable.style = 'margin-left: -400px';
   }
 
   function filterCards(specs, cards) {
@@ -53,7 +59,7 @@ function VacancyMentor({ countCards, vacancyRef, clickOnVacancie, addMoreCards }
             <Link className='vacancy__link vacancy__link-active' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>
             <Link className='vacancy__link' to='/review/programming'><p className='vacancy__link-text'>Ревьюеров</p></Link>
           </div>
-          <div className='vacancy__table'>
+          <div className='vacancy__table' id='vacancy__table'>
             <Route path='/mentor/programming'>
               <Link className='vacancy__choise vacancy__choise-active' to='/mentor/programming'>
                 <button type='button' onClick={setProgramming} className='vacancy__button'>

@@ -126,6 +126,27 @@
   width: 1200px;
 }
 
+.profi__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profi__link_mobile {
+  width: 131px;
+  height: 50px;
+  border-radius: 100px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+.profi__link-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: white;
+}
+
 @media screen and (max-width: 1439px) {
   .profi {
     padding: 120px 60px;
@@ -148,8 +169,14 @@
 
   .profi__text-back {
     width: 266px;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
+    margin: 8px auto 0;
+  }
+
+  .profi__text-back:first-child {
+    margin: 20px auto 0;
   }
 
   .profi__title {
@@ -202,6 +229,18 @@
   }
 
   .profi__block {
-    width: 351px;
+    width: 321px;
+  }
+
+  .profi__back-bottom {
+    width: 266px;
+  }
+
+  .profi__text-back_bottom {
+    width: 126px;
+  }
+
+  .profi__card:hover .flip {
+    transform: rotateY(0);
   }
 }

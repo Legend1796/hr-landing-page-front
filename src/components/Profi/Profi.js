@@ -7,7 +7,7 @@ import image6 from '../../images/illustration23.svg'
 import profiLink from '../../images/profi-link.svg'
 
 import './Profi.css'
-function Profi() {
+function Profi({ pageWidth }) {
   return (
     <section className='profi' id='profi'>
       <div className='profi__block'>
@@ -25,9 +25,16 @@ function Profi() {
                 <p className='profi__text-back'>Разработка и тестирование в условиях, которые имитируют реальную работу: с проектами, спринтами и дедлайнами.</p>
                 <div className='profi__back-bottom'>
                   <p className='profi__text-back profi__text-back_bottom'>31 курс</p>
-                  <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
-                    <img src={profiLink} alt='Ссылка на практикум' />
-                  </a>
+                  {pageWidth > 767
+                    ?
+                    <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <img src={profiLink} alt='Ссылка на практикум' />
+                    </a>
+                    :
+                    <a className='profi__link profi__link_mobile' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <p className='profi__link-text'>Перейти</p>
+                    </a>
+                  }
                 </div>
               </div>
             </div>
@@ -44,9 +51,16 @@ function Profi() {
                 <p className='profi__text-back'>Реальные проекты или максимально приближённые к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
                 <div className='profi__back-bottom'>
                   <p className='profi__text-back profi__text-back_bottom'>11 курсов</p>
-                  <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
-                    <img src={profiLink} alt='Ссылка на практикум' />
-                  </a>
+                  {pageWidth > 767
+                    ?
+                    <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <img src={profiLink} alt='Ссылка на практикум' />
+                    </a>
+                    :
+                    <a className='profi__link profi__link_mobile' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <p className='profi__link-text'>Перейти</p>
+                    </a>
+                  }
                 </div>
               </div>
             </div>
@@ -63,9 +77,16 @@ function Profi() {
                 <p className='profi__text-back'>В эту область входят несколько направлений: предобработка и анализ, Data Science и Data Engineering, хранение и управление данными.</p>
                 <div className='profi__back-bottom'>
                   <p className='profi__text-back profi__text-back_bottom'>16 курсов</p>
-                  <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
-                    <img src={profiLink} alt='Ссылка на практикум' />
-                  </a>
+                  {pageWidth > 767
+                    ?
+                    <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <img src={profiLink} alt='Ссылка на практикум' />
+                    </a>
+                    :
+                    <a className='profi__link profi__link_mobile' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <p className='profi__link-text'>Перейти</p>
+                    </a>
+                  }
                 </div>
               </div>
             </div>
@@ -82,9 +103,16 @@ function Profi() {
                 <p className='profi__text-back'>Знакомим с анализом бренда, рассказываем про seo-оптимизацию и email-маркетинг, обучаем на реальных примерах из бизнеса.</p>
                 <div className='profi__back-bottom'>
                   <p className='profi__text-back profi__text-back_bottom'>2 курса</p>
-                  <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
-                    <img src={profiLink} alt='Ссылка на практикум' />
-                  </a>
+                  {pageWidth > 767
+                    ?
+                    <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <img src={profiLink} alt='Ссылка на практикум' />
+                    </a>
+                    :
+                    <a className='profi__link profi__link_mobile' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <p className='profi__link-text'>Перейти</p>
+                    </a>
+                  }
                 </div>
               </div>
             </div>
@@ -101,9 +129,16 @@ function Profi() {
                 <p className='profi__text-back'>В обучении мы используем проблемно-ориентированный подход, силу данных и научно обоснованные методики.</p>
                 <div className='profi__back-bottom'>
                   <p className='profi__text-back profi__text-back_bottom'>12 курсов</p>
-                  <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
-                    <img src={profiLink} alt='Ссылка на практикум' />
-                  </a>
+                  {pageWidth > 767
+                    ?
+                    <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <img src={profiLink} alt='Ссылка на практикум' />
+                    </a>
+                    :
+                    <a className='profi__link profi__link_mobile' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <p className='profi__link-text'>Перейти</p>
+                    </a>
+                  }
                 </div>
               </div>
             </div>
@@ -120,9 +155,16 @@ function Profi() {
                 <p className='profi__text-back'>Опытные преподаватели из 37 стран, много разговорной практики и современные образовательные технологии.</p>
                 <div className='profi__back-bottom'>
                   <p className='profi__text-back profi__text-back_bottom'>4 курса</p>
-                  <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
-                    <img src={profiLink} alt='Ссылка на практикум' />
-                  </a>
+                  {pageWidth > 767
+                    ?
+                    <a className='profi__link' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <img src={profiLink} alt='Ссылка на практикум' />
+                    </a>
+                    :
+                    <a className='profi__link profi__link_mobile' href='https://practicum.yandex.ru' target='_blank' rel='noopener noreferrer'>
+                      <p className='profi__link-text'>Перейти</p>
+                    </a>
+                  }
                 </div>
               </div>
             </div>
