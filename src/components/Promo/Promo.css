@@ -65,15 +65,15 @@
   display: flex;
   width: 4200px;
   margin-bottom: 30px;
-  animation: slidetext 16s linear infinite;
+  animation: slidetext 46s linear infinite;
 }
 
 .promo__line-first_lowspeed {
-  animation: slidetext 20s linear infinite;
+  animation: slidetext 50s linear infinite;
 }
 
 .promo__line-first_highspeed {
-  animation: slidetextback 13s linear infinite;
+  animation: slidetextback 33s linear infinite;
 }
 
 .promo__text {
@@ -159,14 +159,14 @@
   .promo__line-first {
     margin-bottom: 20px;
     width: 2800px;
-    animation: slidetext 26s linear infinite;
+    animation: slidetext 46s linear infinite;
   }
 
   .promo__line-first_lowspeed {
-    animation: slidetext 30s linear infinite;
+    animation: slidetext 50s linear infinite;
   }
 
   .promo__line-first_highspeed {
-    animation: slidetextback 28s linear infinite;
+    animation: slidetextback 38s linear infinite;
   }
 }

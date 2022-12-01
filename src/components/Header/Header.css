@@ -75,4 +75,12 @@
   .header {
     padding: 0 16px;
   }
+
+  .header__link-text {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

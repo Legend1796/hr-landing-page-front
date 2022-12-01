@@ -58,7 +58,7 @@ function Popup({ isOpen, onClose, title, btnId, activateButton, texts }) {
           </div>
           <div className='popup__texts'>
             {texts.map((text) => (
-              <Text key={text.id} text={text.text} />
+              <Text key={text.id} text={text.text} id={text.id} />
             ))
             }
           </div>

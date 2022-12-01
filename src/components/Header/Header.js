@@ -6,7 +6,7 @@ function Header({ openNavigation, pageWidth }) {
   return (
     <header className='header'>
       <img className='header__logo' src={logo} alt='Логотип сайта' />
-      {pageWidth > 767
+      {pageWidth > 768
         ?
         <>
           <div className='header__links'>
