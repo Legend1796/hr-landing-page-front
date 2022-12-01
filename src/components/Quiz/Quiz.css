@@ -2,6 +2,7 @@
   background-color: #000000;
   color: #FFFFFF;
   transition: background-color 0.5s;
+  padding: 0 120px;
 }
 
 .quiz_result-active {

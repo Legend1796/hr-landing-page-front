@@ -130,7 +130,7 @@ function App() {
       <FeedBack />
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
       <Forma />
-      <Footer />
+      {/* <Footer /> */}
       <Navigation isOpen={openNavigation} onClose={handleCloseAllPopups} />
     </div>
   );
