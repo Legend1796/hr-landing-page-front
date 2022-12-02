@@ -1,9 +1,9 @@
 # Лендинг для HR Яндекс.Практикума
 
 <p align="center">
-    <img alt="Version 1.0.0" src="https://img.shields.io/badge/version-0.1.0-blue" />
+    <img alt="Version 1.0.0" src="https://img.shields.io/badge/version-1.0.0-blue" />
     <img alt="Quality" src="https://img.shields.io/badge/status-release-orange.svg" >
-    <img alt="Made by: 5-plus-1" src="https://img.shields.io/badge/made%20by-egtalovikov-blue" />
+    <img alt="Made by: 5-plus-1" src="https://img.shields.io/badge/made%20by-5%20plus%201-blue" />
 </p>
 
 Это командная проектная работа в рамках хакатона Design&Web в [Яндекс.Практикумe](https://praktikum.yandex.ru "Яндекс Практикум").
