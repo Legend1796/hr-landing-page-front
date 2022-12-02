@@ -68,3 +68,9 @@ $ npm run start
 После запуска вы сможете найти сайт по адресу [http://localhost:3000/](http://localhost:3000/).
 
 Все доступные `npm` команды вы сможете найти в [package.json](package.json).
+
+## Библиотеки
+* [react-hook-form](https://react-hook-form.com/)
+* [rc-dropdown](https://www.npmjs.com/package/rc-dropdown)
+* [rc-menu](https://www.npmjs.com/package/rc-menu)
+* [rc-trigger](https://www.npmjs.com/package/rc-trigger)
