@@ -6,28 +6,30 @@ import 'rc-dropdown/assets/index.css';
 import Menu, { Item as MenuItem, Divider } from 'rc-menu';
 import ReactDOM from 'react-dom';
 
-const Forma = () => {
+const Forma = ({ formRef }) => {
 
     const [nameInputValue, setNameInputValue] = React.useState('');
     const [telegramInputValue, setTelegramInputValue] = React.useState('');
     const [portfolioInputValue, setPortfolioInputValue] = React.useState('');
 
     const [buttonTitle, setButtonTitle] = React.useState('Направление')
+    const [selectorState, setSelectorState] = React.useState(false);
     const [selectorImage, setSelectorImage] = React.useState(<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1.5 1.71094L5.5 5.71094L9.5 1.71094" stroke="#1D6BF3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>)
 
     const menu = (
-        <Menu onSelect={onSelect}>
-            <MenuItem key="Программирование">Программирование</MenuItem>
-            <Divider />
-            <MenuItem key="Анализ данных">Анализ данных</MenuItem>
-            <Divider />
-            <MenuItem key="Дизайн">Дизайн</MenuItem>
-            <Divider />
-            <MenuItem key="Маркетинг">Маркетинг</MenuItem>
-            <Divider />
-            <MenuItem key="Менеджмент">Менеджмент</MenuItem>
+        <Menu onSelect={onSelect} className='formaSauvka__menu'>
+            <Divider className='formaSauvka__divider' />
+            <MenuItem className="formaSauvka__menu-item" key="Программирование">Программирование</MenuItem>
+            <Divider className='formaSauvka__divider' />
+            <MenuItem className="formaSauvka__menu-item" key="Анализ данных">Анализ данных</MenuItem>
+            <Divider className='formaSauvka__divider' />
+            <MenuItem className="formaSauvka__menu-item" key="Дизайн">Дизайн</MenuItem>
+            <Divider className='formaSauvka__divider' />
+            <MenuItem className="formaSauvka__menu-item" key="Маркетинг">Маркетинг</MenuItem>
+            <Divider className='formaSauvka__divider' />
+            <MenuItem className="formaSauvka__menu-item" key="Менеджмент">Менеджмент</MenuItem>
         </Menu>
     );
 
@@ -72,7 +74,7 @@ const Forma = () => {
     }
 
     return (
-        <section className="formaSauvka">
+        <section className="formaSauvka" ref={formRef} id='send'>
             <div className="formaSauvka__container">
                 <h2 className="formaSauvka__title">Оставьте заявку и мы свяжемся с вами</h2>
                 <form className="formaSauvka__forma" onSubmit={handleSubmit(onSubmit)}>
@@ -124,7 +126,7 @@ const Forma = () => {
                                         animation="slide-up"
                                         onVisibleChange={onVisibleChange}
                                     >
-                                        <button className='formaSauvka__direction-button'>{buttonTitle}
+                                        <button className={`formaSauvka__direction-button ${buttonTitle != 'Направление' ? 'formaSauvka__direction-button_active' : ''}`}>{buttonTitle}
                                             {selectorImage}
                                         </button>
                                     </Dropdown>

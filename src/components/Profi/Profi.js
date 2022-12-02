@@ -7,9 +7,9 @@ import image6 from '../../images/illustration23.svg'
 import profiLink from '../../images/profi-link.svg'
 
 import './Profi.css'
-function Profi({ pageWidth }) {
+function Profi({ pageWidth, profiRef }) {
   return (
-    <section className='profi' id='profi'>
+    <section className='profi' ref={profiRef} id='profi'>
       <div className='profi__block'>
         <h2 className='profi__title'>Направления</h2>
         <div className='profi__container'>

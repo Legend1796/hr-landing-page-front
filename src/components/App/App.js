@@ -30,8 +30,28 @@ function App() {
 
   const vacancyRef = React.useRef(null);
 
-  function executeScroll() {
+  const quizRef = React.useRef(null);
+
+  const profiRef = React.useRef(null);
+
+  const formRef = React.useRef(null);
+
+  const promoRef = React.useRef(null);
+
+  function executeVacancyScroll() {
     vacancyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function executeQuizScroll() {
+    quizRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function executeProfiScroll() {
+    profiRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function executeFormScroll() {
+    formRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   window.onresize = newPageSize;
@@ -114,12 +134,12 @@ function App() {
       <Route exact path='/'>
         <Redirect to='/mentor/programming' />
       </Route>
-      <Header pageWidth={pageWidth} openNavigation={handleOpenNavigation} />
-      <Promo pageWidth={pageWidth} />
+      <Header pageWidth={pageWidth} executeQuizScroll={executeQuizScroll} executeFormScroll={executeFormScroll} executeProfiScroll={executeProfiScroll} executeVacancyScroll={executeVacancyScroll} openNavigation={handleOpenNavigation} />
+      <Promo pageWidth={pageWidth} executeVacancyScroll={executeVacancyScroll} />
       <Expert />
-      <Quiz executeScroll={executeScroll} />
+      <Quiz quizRef={quizRef} executeVacancyScroll={executeVacancyScroll} />
       <Roli />
-      <Profi pageWidth={pageWidth} />
+      <Profi profiRef={profiRef} pageWidth={pageWidth} />
       <Banner />
       <Route path='/mentor'>
         <VacancyMentor pageWidth={pageWidth} vacancyRef={vacancyRef} countCards={countCards} clickOnVacancie={handleClickOnVacancie} addMoreCards={handleAddMoreCards} />
@@ -129,7 +149,7 @@ function App() {
       </Route>
       <FeedBack />
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
-      <Forma />
+      <Forma formRef={formRef} />
       <Footer />
       <Navigation isOpen={openNavigation} onClose={handleCloseAllPopups} />
     </div>

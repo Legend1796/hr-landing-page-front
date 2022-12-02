@@ -213,6 +213,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    outline: none;
 }
 
 @media screen and (max-width: 930px) {
@@ -255,3 +257,40 @@
     color: #387CF1;
     margin: 0 8px 0 0;
   }
+
+.formaSauvka__menu {
+    width: 277px;
+    height: 260px;
+    box-shadow: 0px 1px 16px rgba(16, 40, 84, 0.08);
+    border-radius: 12px;
+}
+
+.formaSauvka__menu-item {
+    width: 261px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.formaSauvka__menu-item::before {
+    content: '';
+    width: 20px;
+}
+
+.formaSauvka__menu-item:hover {
+    background-color: #F0F1F3;
+    border-radius: 12px;
+}
+
+.formaSauvka__divider {
+    height: 10px;
+}
+
+.formaSauvka__direction-button_active {
+    color: #000000;
+}

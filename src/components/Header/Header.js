@@ -1,7 +1,7 @@
 import logo from '../../images/RU-logo-short-comp2.svg';
 import navigationBtn from '../../images/icon-menu.svg';
 
-function Header({ openNavigation, pageWidth }) {
+function Header({ openNavigation, pageWidth, executeProfiScroll, executeQuizScroll, executeVacancyScroll, executeFormScroll }) {
 
   return (
     <header className='header'>
@@ -10,11 +10,11 @@ function Header({ openNavigation, pageWidth }) {
         ?
         <>
           <div className='header__links'>
-            <a className='header__link' href='#quiz'><p className='header__link-text'>Наставник или ревьюер</p></a>
-            <a className='header__link' href='#profi'><p className='header__link-text'>Направления</p></a>
-            <a className='header__link' href='#vacancy'><p className='header__link-text'>Вакансии</p></a>
+            <a onClick={executeQuizScroll} className='header__link'><p className='header__link-text'>Наставник или ревьюер</p></a>
+            <a onClick={executeProfiScroll} className='header__link'><p className='header__link-text'>Направления</p></a>
+            <a onClick={executeVacancyScroll} className='header__link'><p className='header__link-text'>Предложения</p></a>
           </div>
-          <button className='header__send-request' type='button'>
+          <button onClick={executeFormScroll} className='header__send-request' type='button'>
             <a className='header__link' href='#send'><p className='header__link-text'>Оставить заявку</p></a>
           </button>
         </>

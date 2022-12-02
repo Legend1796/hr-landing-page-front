@@ -7,7 +7,7 @@ function Navigation({ isOpen, onClose }) {
     <div className={`navigation ${isOpen ? 'navigation_opened' : ''}`} >
       <div className='navigation__container'>
         <div className='navigation__links'>
-          <a className='navigation__link' onClick={onClose} href='#quiz'><p className='navigation__link-text'>Наставник или ревьер</p></a>
+          <a className='navigation__link' onClick={onClose} href='#quiz'><p className='navigation__link-text'>Наставник или ревьюер</p></a>
           <a className='navigation__link' onClick={onClose} href='#profi'><p className='navigation__link-text'>Направления</p></a>
           <a className='navigation__link' onClick={onClose} href='#vacancy'><p className='navigation__link-text'>Предложения</p></a>
         </div>
@@ -21,7 +21,7 @@ function Navigation({ isOpen, onClose }) {
             <a className='navigation__tg' href='https://t.me/practicum_experts' target='_blank' rel='noopener noreferrer'><img className='header__navigation-image' src={socialTg} alt='ссылка тг' /></a>
           </div>
         </div>
-        <button className='navigation__send-request' type='button'>
+        <button onClick={onClose} className='navigation__send-request' type='button'>
           <a className='navigation__link-request' href='#send'><p className='header__link-text'>Оставить заявку</p></a>
         </button>
       </div>

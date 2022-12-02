@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Quiz({ executeScroll }) {
+function Quiz({ executeVacancyScroll, quizRef }) {
 
   const [quizImage, setQuizImage] = React.useState(
     <svg className='quiz__question' width="38" height="41" viewBox="0 0 38 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -637,9 +637,9 @@ function Quiz({ executeScroll }) {
 
   return (
     <>
-      <div className='quiz__presection' id='quiz'>
+      <div className='quiz__presection' ref={quizRef} id='quiz'>
       </div>
-      <section className={`quiz ${isActive ? 'quiz_result-active' : ''}`}  >
+      <section className={`quiz ${isActive ? 'quiz_result-active' : ''}`} >
         <div className='quiz__container'>
           <h2 className="quiz__title">Кто ты?</h2>
           <div className="quiz__slider-and-jobs">
@@ -665,7 +665,7 @@ function Quiz({ executeScroll }) {
             {resultImage}
             <p className="quiz__result-title">{resultTitle}</p>
             <div className="quiz__result-buttons">
-              <Link to={resultLink}><button type="button" onClick={executeScroll} className="quiz__result-button">Смотреть предложения</button></Link>
+              <Link to={resultLink}><button type="button" onClick={executeVacancyScroll} className="quiz__result-button">Смотреть предложения</button></Link>
               <button type="button" onClick={handleRestartClick} className="quiz__result-button quiz__result-button_white">Пройти заново</button>
             </div>
           </div>
