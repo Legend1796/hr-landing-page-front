@@ -73,6 +73,7 @@
 .vacancy__table {
   display: flex;
   margin-bottom: 3px;
+  overflow: hidden;
 }
 
 .vacancy__choise-text {

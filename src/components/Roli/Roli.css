@@ -66,10 +66,10 @@
 .roli__item:last-of-type{
     padding: 24px 30px 24px 30px;
 }
-@media (max-width: 375px){
+@media (max-width: 1024px){
     .roli{
         width: 100%;
-        max-width: 375px;
+        max-width: 1024px;
         margin: 100px auto 0 auto;
     }
     .roli__title{

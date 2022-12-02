@@ -11,9 +11,9 @@ function VacancyReview({ pageWidth, countCards, vacancyRef, clickOnVacancie, add
   const [isNeedMoreButton, setNeedMoreButton] = React.useState(false);
   const vacancyTable = document.getElementById('vacancy__table');
 
-  React.useEffect(() => {
+/*   React.useEffect(() => {
     vacancyTable.style = 'margin-left: 0';
-  }, [pageWidth])
+  }, [pageWidth]) */
 
   React.useEffect(() => {
     filterCards(specs, cards);
@@ -29,7 +29,6 @@ function VacancyReview({ pageWidth, countCards, vacancyRef, clickOnVacancie, add
   function setAnalitics() {
     setSpecs('analitics');
     if (pageWidth < 930) {
-      console.log(pageWidth);
       vacancyTable.style = 'margin-left: -100px';
     }
   }

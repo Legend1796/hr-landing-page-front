@@ -50,12 +50,12 @@ const Forma = () => {
     function onVisibleChange(visible) {
         if (visible) {
             setSelectorImage(<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 5L5 1L1 5" stroke="#1D6BF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 5L5 1L1 5" stroke="#1D6BF3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             )
         } else {
             setSelectorImage(<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.5 1.71094L5.5 5.71094L9.5 1.71094" stroke="#1D6BF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1.5 1.71094L5.5 5.71094L9.5 1.71094" stroke="#1D6BF3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>)
         }
     }
@@ -157,11 +157,9 @@ const Forma = () => {
                     <span className={`formaSauvka__text-error ${errors.stek ? 'formaSauvka__text-error_visible' : ''}`}>{errors.stek ? errors.stek.message : ''}</span>
 
                     <div className="formaSauvka__checkbox">
-                        <label className="custom-checkbox">
                             <span className='star'>*</span>
                             <input className='formaSauvka__checkbox-item' type="checkbox" name="soglacie" value="yes" />
-                            <span>Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на обработку указанных данных для целей рассмотрения анкеты и обратной связи по ней.</span>
-                        </label>
+                            <span className='formaSauvka__checkbox-text'>Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на обработку указанных данных для целей рассмотрения анкеты и обратной связи по ней.</span>
                     </div>
 
                     <button className="formaSauvka__submit-button" type="submit" >Отправить заявку</button>

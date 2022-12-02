@@ -14,7 +14,7 @@ import Popup from '../Popup/Popup';
 import * as popupTexts from '../utils/texts';
 import Footer from '../Footer/Footer';
 import Roli from '../Roli/Roli';
-// import Forma from '../Forma/Forma';
+import Forma from '../Forma/Forma';
 import Navigation from '../Navigation/Navigation';
 
 function App() {
@@ -129,7 +129,7 @@ function App() {
       </Route>
       <FeedBack />
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
-      {/* <Forma /> */}
+      <Forma />
       <Footer />
       <Navigation isOpen={openNavigation} onClose={handleCloseAllPopups} />
     </div>

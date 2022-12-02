@@ -8,6 +8,12 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 930px) {
+    .formaSauvka {
+        padding-top: 32px;
+    }
+}
+
 .formaSauvka__container {
     max-width: 790px;
     background: #FFFFFF;
@@ -20,10 +26,24 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 930px) {
+    .formaSauvka__container {
+        max-width: 343px;
+        padding: 36px 33px;
+    }
+}
+
 .formaSauvka__form-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 930px) {
+    .formaSauvka__form-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .formaSauvka__title {
@@ -36,6 +56,16 @@
     padding-top: 20px;
 }
 
+@media screen and (max-width: 930px) {
+    .formaSauvka__title {
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 341px;
+        padding-top: 0px;
+        margin: 0 0 32px;
+    }
+}
+
 .formaSauvka__field {
     position: relative;
     margin: 0 0 52px 0;
@@ -44,6 +74,16 @@
 
 .formaSauvka__field:nth-child(odd) {
     margin-right: 31px;
+}
+
+@media screen and (max-width: 930px) {
+    .formaSauvka__field {
+        margin-bottom: 26px;
+    }
+
+    .formaSauvka__field:nth-child(odd) {
+        margin-right: 0px;
+    }
 }
 
 .formaSauvka__inputs {
@@ -57,6 +97,13 @@
     padding: 0;
     position: relative;
     outline: none;
+}
+
+@media screen and (max-width: 930px) {
+    .formaSauvka__inputs {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 .formaSauvka__inputs_typed {
@@ -93,6 +140,18 @@
     outline: none;
 }
 
+@media screen and (max-width: 930px) {
+    .formaSauvka__inputs_stek {
+        font-size: 16px;
+        line-height: 22px;
+        width: 277px;
+        height: 84px;
+        margin-bottom: 16px;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+}
+
 .formaSauvka__inputs_error {
     border-bottom: 1px solid #FF3B30;
 }
@@ -112,6 +171,26 @@
 .formaSauvka__checkbox {
     text-align: left;
     margin-bottom: 32px;
+}
+
+.formaSauvka__checkbox-text {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@media screen and (max-width: 930px) {
+    .formaSauvka__checkbox {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width: 930px) {
+    .formaSauvka__checkbox-text {
+        color: #A9A9AD;
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 235px;
+    }
 }
 
 .formaSauvka__checkbox-item {
@@ -136,6 +215,16 @@
     align-items: center;
 }
 
+@media screen and (max-width: 930px) {
+    .formaSauvka__direction-button {
+        font-size: 16px;
+        line-height: 22px;
+        width: 277px;
+        height: 26px;
+        margin-bottom: 16px;
+    }
+}
+
 .formaSauvka__submit-button {
     font-weight: 500;
     font-size: 16px;
@@ -150,6 +239,12 @@
     transition: color 0.5s;
     transition: background-color 0.5s;
   }
+
+  @media screen and (max-width: 930px) {
+    .formaSauvka__submit-button {
+        height: 50px;
+    }
+}
   
   .formaSauvka__submit-button:hover {
     background-color: #FFFFFF;

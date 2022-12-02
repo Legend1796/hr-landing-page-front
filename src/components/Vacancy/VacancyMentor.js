@@ -16,9 +16,9 @@ function VacancyMentor({ pageWidth, countCards, vacancyRef, clickOnVacancie, add
     filterCards(specs, cards);
   }, [specs, countCards])
 
-  React.useEffect(() => {
+/*   React.useEffect(() => {
     vacancyTable.style = 'margin-left: 0';
-  }, [pageWidth])
+  }, [pageWidth]) */
 
   function setProgramming() {
     setSpecs('programming');

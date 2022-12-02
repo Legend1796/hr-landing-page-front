@@ -6,11 +6,11 @@ function Header({ openNavigation, pageWidth }) {
   return (
     <header className='header'>
       <img className='header__logo' src={logo} alt='Логотип сайта' />
-      {pageWidth > 768
+      {pageWidth > 820
         ?
         <>
           <div className='header__links'>
-            <a className='header__link' href='#quiz'><p className='header__link-text'>Наставник или ревьер</p></a>
+            <a className='header__link' href='#quiz'><p className='header__link-text'>Наставник или ревьюер</p></a>
             <a className='header__link' href='#profi'><p className='header__link-text'>Направления</p></a>
             <a className='header__link' href='#vacancy'><p className='header__link-text'>Вакансии</p></a>
           </div>
