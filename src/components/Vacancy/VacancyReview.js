@@ -11,10 +11,6 @@ function VacancyReview({ pageWidth, countCards, vacancyRef, clickOnVacancie, add
   const [isNeedMoreButton, setNeedMoreButton] = React.useState(false);
   const vacancyTable = document.getElementById('vacancy__table');
 
-  /*   React.useEffect(() => {
-      vacancyTable.style = 'margin-left: 0';
-    }, [pageWidth]) */
-
   React.useEffect(() => {
     filterCards(specs, cards);
   }, [specs, countCards])
@@ -55,7 +51,7 @@ function VacancyReview({ pageWidth, countCards, vacancyRef, clickOnVacancie, add
   }
 
   function filterCards(specs, cards) {
-    var vacanciesOnFilter = (cards.filter((i) => i.role === 'mentor').filter((i) => i.specs === specs));
+    var vacanciesOnFilter = (cards.filter((i) => i.role === 'review').filter((i) => i.specs === specs));
     if (vacanciesOnFilter.length > countCards) {
       setNeedMoreButton(true);
     } else { setNeedMoreButton(false) }
