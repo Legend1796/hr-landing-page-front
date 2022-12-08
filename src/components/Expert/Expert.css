@@ -111,7 +111,7 @@
 @media screen and (max-width: 767px) {
 
   .expert {
-    padding: 0;
+    padding: 0 16px;
   }
 
   .expert__card {
@@ -168,6 +168,7 @@
 
   .expert__cards {
     gap: 0;
+    max-width: 306px;
   }
 
   .expert__image_position {
