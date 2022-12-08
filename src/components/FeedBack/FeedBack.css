@@ -186,14 +186,16 @@
     margin-left: 17px;
     font-size: 28px;
     line-height: 36px;
+    max-width: 306px;
   }
 
   .feedback__container {
-    width: 375px;
+    width: 306px;
   }
 
   .feedback__container-slider {
     height: 411px;
+    max-width: 306px;
   }
 
   .feedback__container-buttons {
