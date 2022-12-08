@@ -15,7 +15,6 @@
 }
 
 .profi__container {
-
   display: grid;
   grid-template-columns: repeat(3, 31.7%);
   column-gap: 30px;
@@ -184,31 +183,46 @@
     line-height: 36px;
     text-align: start;
     width: 306px;
-    margin: 100px auto 32px;
+    margin: 0 auto 32px;
   }
 
   .profi__container {
+    overflow: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
-    width: 306px;
+    width: 316px;
+    height: 380px;
+  }
+
+  .profi__overflow {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .profi__block {
+    width: 5000px;
   }
 
   .profi__front {
     width: 306px;
     height: 330px;
+    box-shadow: none;
   }
 
   .profi__back {
-    width: 306px;
+    width: 286px;
     height: 330px;
   }
 
   .profi__card {
-    width: 306px;
+    margin: 11px 11px 15px;
+    width: 286px;
     height: 330px;
+    overflow: hidden;
+    border: 1px solid #F0F1F3;
+    border-radius: 32px;
+    box-shadow: 2px 2px 15px rgba(16, 40, 84, 0.1);
   }
 
   .profi__text {

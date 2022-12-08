@@ -11,9 +11,9 @@ function VacancyReview({ pageWidth, countCards, vacancyRef, clickOnVacancie, add
   const [isNeedMoreButton, setNeedMoreButton] = React.useState(false);
   const vacancyTable = document.getElementById('vacancy__table');
 
-/*   React.useEffect(() => {
-    vacancyTable.style = 'margin-left: 0';
-  }, [pageWidth]) */
+  /*   React.useEffect(() => {
+      vacancyTable.style = 'margin-left: 0';
+    }, [pageWidth]) */
 
   React.useEffect(() => {
     filterCards(specs, cards);
@@ -66,7 +66,7 @@ function VacancyReview({ pageWidth, countCards, vacancyRef, clickOnVacancie, add
     <>
       <section className='vacancy' ref={vacancyRef} id='vacancy'>
         <div className='vacancy__filter'>
-          <h1 className='vacancy__title'>Кого мы ищем</h1>
+          <h2 className='vacancy__title'>Кого мы ищем</h2>
           <div className='vacancy__links'>
             <Link className='vacancy__link' to='/mentor/programming'><p className='vacancy__link-text'>Наставников</p></Link>
             <Link className='vacancy__link vacancy__link-active' to='/review/programming'><p className='vacancy__link-text'>Ревьюеров</p></Link>

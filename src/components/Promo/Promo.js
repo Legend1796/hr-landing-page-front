@@ -9,54 +9,54 @@ function Promo({ pageWidth, executeVacancyScroll }) {
           pageWidth > 767
             ?
             <div className='promo__line-first'>
-              <h3 className='promo__paragrapf'>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</a>
-              </h3>
-              <h3 className='promo__paragrapf'>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</a>
-              </h3>
+              <div className='promo__paragrapf'>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</button>
+              </div>
+              <div className='promo__paragrapf'>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</button>
+              </div>
             </div>
             :
             <>
               <div className='promo__line-first'>
-                <h3 className='promo__paragrapf'>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</a>
-                </h3>
-                <h3 className='promo__paragrapf'>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</a>
-                </h3>
+                <div className='promo__paragrapf'>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</button>
+                </div>
+                <div className='promo__paragrapf'>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</button>
+                </div>
               </div>
               <div className='promo__line-first  promo__line-first_highspeed'>
-                <h3 className='promo__paragrapf'>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</a>
-                </h3>
-                <h3 className='promo__paragrapf'>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</a>
-                </h3>
+                <div className='promo__paragrapf'>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</button>
+                </div>
+                <div className='promo__paragrapf'>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>менеджмента</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>маркетинга</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>анализа данных</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_black'>дизайна</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_blue'>программирования</button>
+                </div>
               </div>
             </>
         }
@@ -64,87 +64,87 @@ function Promo({ pageWidth, executeVacancyScroll }) {
           pageWidth > 767
             ?
             <div className='promo__line-first promo__line-first_highspeed'>
-              <h3 className='promo__paragrapf'>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-              </h3>
-              <h3 className='promo__paragrapf'>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</a>
-                <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-              </h3>
+              <div className='promo__paragrapf'>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+              </div>
+              <div className='promo__paragrapf'>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</button>
+                <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+              </div>
             </div>
             :
             <>
               <div className='promo__line-first'>
-                <h3 className='promo__paragrapf'>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                </h3>
-                <h3 className='promo__paragrapf'>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                </h3>
+                <div className='promo__paragrapf'>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                </div>
+                <div className='promo__paragrapf'>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                </div>
               </div>
               <div className='promo__line-first promo__line-first_highspeed'>
-                <h3 className='promo__paragrapf'>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                </h3>
-                <h3 className='promo__paragrapf'>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</a>
-                  <a onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</a>
-                </h3>
+                <div className='promo__paragrapf'>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                </div>
+                <div className='promo__paragrapf'>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>менеджмента</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>анализа данных</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>дизайна</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_blue'>программирования</button>
+                  <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_small promo__text_black'>маркетинга</button>
+                </div>
               </div>
             </>
         }
 
         <div className='promo__line-first promo__line-first_lowspeed'>
-          <h3 className='promo__paragrapf'>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>дизайна</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>менеджмента</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>маркетинга</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>анализа данных</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>менеджмента</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>программирования</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>дизайна</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>анализа данных</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>программирования</a>
-          </h3>
-          <h3 className='promo__paragrapf'>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>менеджмента</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>дизайна</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>маркетинга</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>анализа данных</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>менеджмента</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>программирования</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>дизайна</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>анализа данных</a>
-            <a onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>программирования</a>
-          </h3>
+          <div className='promo__paragrapf'>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>дизайна</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>менеджмента</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>маркетинга</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>анализа данных</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>менеджмента</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>программирования</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>дизайна</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>анализа данных</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>программирования</button>
+          </div>
+          <div className='promo__paragrapf'>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>менеджмента</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>дизайна</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>маркетинга</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>анализа данных</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>менеджмента</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>программирования</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>дизайна</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_blue'>анализа данных</button>
+            <button type='button' onClick={executeVacancyScroll} className='promo__text promo__text_smallest promo__text_black'>программирования</button>
+          </div>
         </div>
       </div>
       <div className='promo__bottom-сontainer'>
