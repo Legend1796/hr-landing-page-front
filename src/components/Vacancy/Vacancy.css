@@ -228,11 +228,11 @@
   }
 
   .vacancy__container {
-    width: 345px;
+    width: 335px;
   }
 
   .vacancy__filter {
-    width: 351px;
+    width: 325px;
   }
 
   .vacancy__items {
@@ -240,7 +240,7 @@
   }
 
   .vacancy__item {
-    width: 342px;
+    width: 335px;
     justify-content: flex-start;
     height: 160px;
   }
