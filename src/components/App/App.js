@@ -1,19 +1,19 @@
 import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
+import './App.css';
+import * as popupTexts from '../utils/texts';
 import Expert from '../Expert/Expert';
 import Header from '../Header/Header';
 import Promo from '../Promo/Promo';
 import Profi from '../Profi/Profi';
 import Quiz from '../Quiz/Quiz';
-import './App.css';
 import VacancyMentor from '../Vacancy/VacancyMentor';
-import { Route, Redirect } from 'react-router-dom';
 import VacancyReview from '../Vacancy/VacancyReview';
 import Banner from '../Banner/Banner';
 import FeedBack from '../FeedBack/FeedBack';
 import Popup from '../Popup/Popup';
-import * as popupTexts from '../utils/texts';
 import Footer from '../Footer/Footer';
-import Roli from '../Roli/Roli';
+import Roles from '../Roles/Roles';
 import Forma from '../Forma/Forma';
 import Navigation from '../Navigation/Navigation';
 
@@ -138,7 +138,7 @@ function App() {
       <Promo pageWidth={pageWidth} executeVacancyScroll={executeVacancyScroll} />
       <Expert />
       <Quiz quizRef={quizRef} executeVacancyScroll={executeVacancyScroll} />
-      <Roli />
+      <Roles />
       <Profi profiRef={profiRef} pageWidth={pageWidth} />
       <Banner />
       <Route path='/mentor'>

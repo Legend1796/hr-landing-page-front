@@ -163,7 +163,7 @@
 
 @media screen and (max-width: 930px) {
   .profi {
-    padding: 100px 16px;
+    padding: 100px 0;
   }
 
   .profi__text-back {
@@ -190,7 +190,7 @@
     overflow: auto;
     display: flex;
     margin: 0 auto;
-    width: 316px;
+    width: 100%;
     height: 380px;
   }
 
@@ -198,10 +198,6 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-  }
-
-  .profi__block {
-    width: 5000px;
   }
 
   .profi__front {
@@ -243,7 +239,7 @@
   }
 
   .profi__block {
-    width: 321px;
+    width: 100%;
   }
 
   .profi__back-bottom {
