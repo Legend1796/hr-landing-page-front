@@ -128,6 +128,10 @@
   background-color: #215EC6;
 }
 
+.popup__button:hover .popup__button-name {
+  color: white;
+}
+
 .popup__button-name {
   padding: 0;
   margin: 0;

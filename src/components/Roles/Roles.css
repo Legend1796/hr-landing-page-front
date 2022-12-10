@@ -74,11 +74,6 @@
   padding: 24px 30px 24px 30px;
 }
 
-/* .roles__margins {
-  width: 120px;
-  margin: 0 auto;
-} */
-
 @media (max-width: 1024px) {
   .roles {
     width: 100%;
@@ -87,7 +82,7 @@
   }
 
   .roles__margins {
-    width: 343px;
+    width: 353px;
     margin: 0 auto;
   }
 

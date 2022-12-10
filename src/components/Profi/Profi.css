@@ -15,12 +15,15 @@
 }
 
 .profi__container {
+  margin: 0 auto;
+}
+
+.profi__overflow {
   display: grid;
   grid-template-columns: repeat(3, 31.7%);
   column-gap: 30px;
   grid-template-rows: repeat(2, 48.2%);
   row-gap: 28px;
-  margin: 0 auto;
 }
 
 .profi__card {
@@ -152,6 +155,11 @@
   }
 
   .profi__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .profi__overflow {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
