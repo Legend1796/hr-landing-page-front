@@ -270,6 +270,12 @@
     width: 100%;
   }
 
+  .popup__texts-scroll {
+    display: block;
+    overflow: auto;
+    height: 400px;
+  }
+
   .popup__background-container {
     flex-direction: column-reverse;
     justify-content: center;

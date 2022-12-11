@@ -64,10 +64,12 @@ function Popup({ isOpen, onClose, title, btnId, activateButton, texts }) {
             </button>
           </div>
           <div className='popup__texts'>
-            {texts.map((text) => (
-              <Text key={text.id} text={text.text} id={text.id} />
-            ))
-            }
+            <div className='popup__texts-scroll'>
+              {texts.map((text) => (
+                <Text key={text.id} text={text.text} id={text.id} />
+              ))
+              }
+            </div>
           </div>
         </div>
         <div className='popup__background-container'>
