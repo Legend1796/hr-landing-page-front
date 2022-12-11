@@ -3,8 +3,6 @@ import popupLink from '../../images/popup-link.svg';
 
 function Popup({ isOpen, onClose, title, btnId, activateButton, texts }) {
 
-  const moveButtons = document.getElementById('popup__move-buttons');
-
   function activeButton1() {
     activateButton(1);
     // moveButtons.style = 'left: 10';
@@ -46,7 +44,6 @@ function Popup({ isOpen, onClose, title, btnId, activateButton, texts }) {
         </div>
         <div className='popup__two-columns'>
           <div className='popup__buttons'>
-            {/* <div className='popup__move-buttons' id='popup__move-buttons'> */}
             <button onClick={activeButton1} className={`popup__button ${btnId === 1 ? 'popup__button_active' : ''}`} type='button' aria-label='Кнопка чата'>
               <p className='popup__button-name'>О чем курс?</p>
             </button>
@@ -66,7 +63,6 @@ function Popup({ isOpen, onClose, title, btnId, activateButton, texts }) {
               <p className='popup__button-name'>Что такое Школа наставников и сколько времени она занимает?</p>
             </button>
           </div>
-          {/* </div> */}
           <div className='popup__texts'>
             {texts.map((text) => (
               <Text key={text.id} text={text.text} id={text.id} />

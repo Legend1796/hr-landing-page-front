@@ -84,7 +84,6 @@
   margin: 0;
   padding: 0;
   box-shadow: 2px 2px 15px rgba(16, 40, 84, 0.1);
-  color: 1D6BF3;
   background-color: white;
   margin-top: 28px;
   margin-left: 40px;
@@ -159,10 +158,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-}
-
-.popup__button:first-child {
-  margin-top: 32px;
 }
 
 .popup__background-container {
@@ -260,9 +255,8 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    min-width: 150px;
-
-    max-height: 84px;
+    min-width: 240px;
+    max-height: 64px;
     margin: 0;
     padding: 12px 20px;
   }
