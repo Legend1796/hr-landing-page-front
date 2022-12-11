@@ -8,7 +8,7 @@
 
 Это командная проектная работа в рамках хакатона Design&Web в [Яндекс.Практикумe](https://praktikum.yandex.ru "Яндекс Практикум").
 
-**Ссылка на проект: [Vercel](hr-landing-page-front.vercel.app)**
+**Ссылка на проект: [Vercel](https://hr-landing-page-front-beige.vercel.app/)**
 
 ## Сведения о команде
 
