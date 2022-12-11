@@ -240,8 +240,8 @@
     overflow: auto;
     width: 360px;
     padding-left: 8px;
-    padding-top: 30px;
-    padding-bottom: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
     height: 100px;
     flex-direction: row;
     align-items: center;
