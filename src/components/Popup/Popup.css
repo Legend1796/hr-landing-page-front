@@ -229,6 +229,7 @@
     font-size: 16px;
     line-height: 20px;
     min-width: 92px;
+    max-width: 240px;
   }
 
   .popup__text {
@@ -241,29 +242,28 @@
   }
 
   .popup__buttons {
-    overflow: hidden;
+    overflow: auto;
     width: 360px;
     padding-left: 8px;
     padding-top: 30px;
     padding-bottom: 8px;
-    position: relative;
     height: 100px;
-  }
-
-
-  .popup__move-buttons {
-    position: absolute;
-    align-items: center;
     flex-direction: row;
-    width: 1400px;
+    align-items: center;
+    gap: 16px;
   }
 
   .popup__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    max-width: 240px;
-    max-height: 94px;
-    margin-left: 16px;
+    min-width: 150px;
+
+    max-height: 84px;
+    margin: 0;
     padding: 12px 20px;
   }
 
