@@ -14,7 +14,7 @@ import FeedBack from '../FeedBack/FeedBack';
 import Popup from '../Popup/Popup';
 import Footer from '../Footer/Footer';
 import Roles from '../Roles/Roles';
-import Forma from '../Forma/Forma';
+import Form from '../Form/Form';
 import Navigation from '../Navigation/Navigation';
 
 function App() {
@@ -149,7 +149,7 @@ function App() {
       </Route>
       <FeedBack />
       <Popup isOpen={openPopup} title={cardTitle} onClose={handleCloseAllPopups} btnId={btnId} activateButton={handleActivateButton} texts={texts} />
-      <Forma formRef={formRef} />
+      <Form formRef={formRef} />
       <Footer />
       <Navigation isOpen={openNavigation} onClose={handleCloseAllPopups} />
     </div>
