@@ -3,7 +3,6 @@ import { useForm } from 'react-hook-form';
 import Dropdown from 'rc-dropdown';
 import 'rc-dropdown/assets/index.css';
 import Menu, { Item as MenuItem, Divider } from 'rc-menu';
-import ReactDOM from 'react-dom';
 
 const Form = ({ formRef }) => {
 
@@ -12,7 +11,7 @@ const Form = ({ formRef }) => {
   const [portfolioInputValue, setPortfolioInputValue] = React.useState('');
 
   const [buttonTitle, setButtonTitle] = React.useState('Направление')
-  const [selectorState, setSelectorState] = React.useState(false);
+  // const [selectorState, setSelectorState] = React.useState(false);
   const [selectorImage, setSelectorImage] = React.useState(<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1.5 1.71094L5.5 5.71094L9.5 1.71094" stroke="#1D6BF3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>)
@@ -64,7 +63,7 @@ const Form = ({ formRef }) => {
 
   const {
     register,
-    formState: { errors, isDirty, isValid },
+    formState: { errors },
     handleSubmit,
   } = useForm({ mode: "onChange" });
 
@@ -79,7 +78,7 @@ const Form = ({ formRef }) => {
         <form className="form__forma" onSubmit={handleSubmit(onSubmit)}>
           <div className='form__form-container'>
             <div onChange={handleNameInputChange} className='form__field'>
-              <input value={nameInputValue} className={`${errors.name ? "form__inputs_error" : ''} form__inputs form__inputs_1 ${(!errors.name && nameInputValue != '') ? 'form__inputs_typed' : ''}`}
+              <input value={nameInputValue} className={`${errors.name ? "form__inputs_error" : ''} form__inputs form__inputs_1 ${(!errors.name && nameInputValue !== '') ? 'form__inputs_typed' : ''}`}
                 {...register("name", {
                   minLength: {
                     value: 2,
@@ -101,7 +100,7 @@ const Form = ({ formRef }) => {
               <span className={`form__text-error ${errors.name ? 'form__text-error_visible' : ''}`}>{errors.name ? errors.name.message : ''}</span>
             </div>
             <div onChange={handleTelegramInputChange} className="form__field">
-              <input value={telegramInputValue} className={`${errors.telegram ? "form__inputs_error" : ''} form__inputs form__inputs_2 ${(!errors.telegram && telegramInputValue != '') ? 'form__inputs_typed' : ''}`}
+              <input value={telegramInputValue} className={`${errors.telegram ? "form__inputs_error" : ''} form__inputs form__inputs_2 ${(!errors.telegram && telegramInputValue !== '') ? 'form__inputs_typed' : ''}`}
                 {...register('telegram', {
                   pattern: {
                     value: /@([A-Za-z0-9_]{1,15})/,
@@ -125,7 +124,7 @@ const Form = ({ formRef }) => {
                     animation="slide-up"
                     onVisibleChange={onVisibleChange}
                   >
-                    <button className={`form__direction-button ${buttonTitle != 'Направление' ? 'form__direction-button_active' : ''}`}>{buttonTitle}
+                    <button className={`form__direction-button ${buttonTitle !== 'Направление' ? 'form__direction-button_active' : ''}`}>{buttonTitle}
                       {selectorImage}
                     </button>
                   </Dropdown>
@@ -133,7 +132,7 @@ const Form = ({ formRef }) => {
               </div>
             </div>
             <div onChange={handlePortfolioInputChange} className='form__field'>
-              <input className={`${errors.portfolio ? "form__inputs_error" : ''} form__inputs form__inputs_3 ${(!errors.portfolio && portfolioInputValue != '') ? 'form__inputs_typed' : ''}`}
+              <input className={`${errors.portfolio ? "form__inputs_error" : ''} form__inputs form__inputs_3 ${(!errors.portfolio && portfolioInputValue !== '') ? 'form__inputs_typed' : ''}`}
                 {...register('portfolio', {
                   pattern: {
                     value: /[-a-zA-Z0-9@:%_\+.~#?&\/=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&\/=]*)?/gi,
