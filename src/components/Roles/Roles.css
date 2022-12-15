@@ -95,7 +95,7 @@
     width: 350px;
   }
 
-  .roles__item:nth-last-of-type(1) {
+  /* .roles__item:nth-last-of-type(1) {
     order: 1;
   }
 
@@ -117,7 +117,7 @@
 
   .roles__item:nth-last-of-type(6) {
     order: 6;
-  }
+  } */
 
   .roles__text {
     font-size: 18px;
@@ -130,15 +130,25 @@
   }
 
   .roles__container {
-    /* width: 385px; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     row-gap: 16px;
     width: 91.5%;
     max-width: 90%;
     margin: 32px auto 0 auto;
   }
+
+  .roles__margins {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
+
+  .roles {
+    max-width: 768px;
+  }
 
   .roles__margins {
     width: 353px;
