@@ -95,30 +95,6 @@
     width: 350px;
   }
 
-  /* .roles__item:nth-last-of-type(1) {
-    order: 1;
-  }
-
-  .roles__item:nth-last-of-type(2) {
-    order: 4;
-  }
-
-  .roles__item:nth-last-of-type(3) {
-    order: 5;
-  }
-
-  .roles__item:nth-last-of-type(4) {
-    order: 2;
-  }
-
-  .roles__item:nth-last-of-type(5) {
-    order: 3;
-  }
-
-  .roles__item:nth-last-of-type(6) {
-    order: 6;
-  } */
-
   .roles__text {
     font-size: 18px;
     line-height: 24px;
