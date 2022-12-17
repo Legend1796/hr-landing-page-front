@@ -10,16 +10,16 @@ import React from 'react';
 import './Profi.css'
 function Profi({ pageWidth, profiRef }) {
 
-  var flipCard = document.getElementById("flipCard");
+  var flipCardProgr = document.getElementById('flipCardProgr');
 
-  function handleFlippedCard() {
-    flipCard.style.transform = "rotateY(180deg)";
-    console.log('flipIn');
+  function handleFlippedCard(e) {
+    // flipCardProgr.style.transform = "rotateY(180deg)";
+    console.log(e.target.closest('.flip'));
   }
 
   function handleUnFlippedCard(e) {
-    flipCard.style.transform = "rotateY(0)";
-    console.log(e.target);
+    // flipCardProgr.style.transform = "rotateY(0)";
+    console.log(e.target.closest('.flip'));
   }
 
   return (
@@ -30,7 +30,7 @@ function Profi({ pageWidth, profiRef }) {
           <div className='profi__overflow'>
 
             <div className='profi__card'>
-              <div className='flip' id='flipCard'>
+              <div className='flip'>
                 <div className='profi__front' onClick={handleFlippedCard}>
                   <p className='profi__text'>Программирование</p>
                   <p className='profi__text profi__text_size'>Тестирование, фронтенд, бэкенд, DevOps и алгоритмы</p>
@@ -56,7 +56,7 @@ function Profi({ pageWidth, profiRef }) {
               </div>
             </div>
             <div className='profi__card'>
-              <div className='flip' id='flipCard'>
+              <div className='flip'>
                 <div className='profi__front' onClick={handleFlippedCard}>
                   <p className='profi__text'>Дизайн</p>
                   <p className='profi__text profi__text_size'>Графический, коммуникационный, для интерфейсов и продуктов</p>
@@ -82,7 +82,7 @@ function Profi({ pageWidth, profiRef }) {
               </div>
             </div>
             <div className='profi__card'>
-              <div className='flip' id='flipCard'>
+              <div className='flip'>
                 <div className='profi__front' onClick={handleFlippedCard}>
                   <p className='profi__text'>Анализ данных</p>
                   <p className='profi__text profi__text_size'>SQL, аналитика, Data Science и архитектура данных</p>
@@ -108,7 +108,7 @@ function Profi({ pageWidth, profiRef }) {
               </div>
             </div>
             <div className='profi__card'>
-              <div className='flip' id='flipCard'>
+              <div className='flip'>
                 <div className='profi__front' onClick={handleFlippedCard}>
                   <p className='profi__text'>Маркетинг</p>
                   <p className='profi__text profi__text_size'>Интернет-маркетинг и управление трафиком</p>
@@ -134,7 +134,7 @@ function Profi({ pageWidth, profiRef }) {
               </div>
             </div>
             <div className='profi__card'>
-              <div className='flip' id='flipCard'>
+              <div className='flip'>
                 <div className='profi__front' onClick={handleFlippedCard}>
                   <p className='profi__text'>Менеджмент</p>
                   <p className='profi__text profi__text_size'>Управление проектами, командами и IT-рекрумент</p>
@@ -160,7 +160,7 @@ function Profi({ pageWidth, profiRef }) {
               </div>
             </div>
             <div className='profi__card'>
-              <div className='flip' id='flipCard'>
+              <div className='flip'>
                 <div className='profi__front' onClick={handleFlippedCard}>
                   <p className='profi__text'>Английский</p>
                   <p className='profi__text profi__text_size'>Для работы и жизни</p>
