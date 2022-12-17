@@ -150,6 +150,7 @@
 }
 
 @media screen and (max-width: 1439px) {
+
   .profi {
     padding: 120px 60px;
   }
@@ -167,9 +168,11 @@
   .profi__block {
     width: 790px;
   }
+
 }
 
 @media screen and (max-width: 930px) {
+
   .profi {
     padding: 100px 0;
   }
@@ -261,4 +264,13 @@
   .profi__card:hover .flip {
     transform: rotateY(0);
   }
+
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+
+  .flip {
+    transform: rotateY(0);
+  }
+
 }
