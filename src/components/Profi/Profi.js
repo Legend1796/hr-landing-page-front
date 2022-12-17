@@ -14,14 +14,14 @@ function Profi({ pageWidth, profiRef }) {
 
   function handleFlippedCard(e) {
     const flipCard = e.target.closest('.flip');
-    // flipCardProgr.style.transform = "rotateY(180deg)";
+    flipCard.style.transform = "rotateY(180deg)";
     console.log(flipCard);
   }
 
   function handleUnFlippedCard(e) {
     const flipCardBack = e.target.closest('.flip');
-    // flipCardProgr.style.transform = "rotateY(0)";
-    console.log(e.target.closest('.flip'));
+    flipCardBack.style.transform = "rotateY(0)";
+    console.log(flipCardBack);
   }
 
   return (
