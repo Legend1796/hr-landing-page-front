@@ -10,7 +10,7 @@ import React from 'react';
 import './Profi.css'
 function Profi({ pageWidth, profiRef }) {
 
-  var flipCardProgr = document.getElementById('flipCardProgr');
+  // var flipCardProgr = document.getElementById('flipCardProgr');
 
   function handleFlippedCard(e) {
     // flipCardProgr.style.transform = "rotateY(180deg)";
