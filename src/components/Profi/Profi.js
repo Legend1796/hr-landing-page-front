@@ -13,11 +13,13 @@ function Profi({ pageWidth, profiRef }) {
   // var flipCardProgr = document.getElementById('flipCardProgr');
 
   function handleFlippedCard(e) {
+    const flipCard = e.target.closest('.flip');
     // flipCardProgr.style.transform = "rotateY(180deg)";
-    console.log(e.target.closest('.flip'));
+    console.log(flipCard);
   }
 
   function handleUnFlippedCard(e) {
+    const flipCardBack = e.target.closest('.flip');
     // flipCardProgr.style.transform = "rotateY(0)";
     console.log(e.target.closest('.flip'));
   }
