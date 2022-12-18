@@ -181,7 +181,8 @@
     width: 266px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
+    margin: 0;
     margin: 8px auto 0;
   }
 
@@ -218,13 +219,13 @@
   }
 
   .profi__back {
-    width: 286px;
+    width: 306px;
     height: 330px;
   }
 
   .profi__card {
     margin: 11px 11px 15px;
-    width: 286px;
+    width: 306px;
     height: 330px;
     overflow: hidden;
     border: 1px solid #F0F1F3;

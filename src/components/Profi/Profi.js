@@ -61,7 +61,7 @@ function Profi({ pageWidth, profiRef }) {
                   <img className='profi_image' src={image2} alt='Логотип дизаин'></img>
                 </div>
                 <div className='profi__back' onClick={handleUnFlippedCard}>
-                  <p className='profi__text-back'>У нас обучаются дизайнеры, UX-писатели и UX-исследователи. Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
+                  <p className='profi__text-back'>У нас обучаются дизайнеры, UX-писатели и UX-исследователи. Учим работать с композицией, цветом, типографикой, текстом, исследованиями.</p>
                   <p className='profi__text-back'>Реальные проекты или максимально приближённые к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
                   <div className='profi__back-bottom'>
                     <p className='profi__text-back profi__text-back_bottom'>11 курсов</p>
