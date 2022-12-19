@@ -255,11 +255,15 @@
   }
 
   .profi__back-bottom {
+    align-items: baseline;
     width: 266px;
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
 
   .profi__text-back_bottom {
     width: 126px;
+    margin: 0;
   }
 
   .profi__card:hover .flip {
